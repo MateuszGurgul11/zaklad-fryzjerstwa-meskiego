@@ -15,7 +15,84 @@
    Tekst i akcenty muszą być czytelne na obu tłach, więc pochodzą
    z rozjaśnień zieleni marki (kontrast wzgl. #253024 = 6,3:1,
    wzgl. czerni = 9,4:1 — powyżej progu WCAG AA).
+
+   Nagłówki = Big Shoulders Inline (własna rodzina, nie alias EaseDouble —
+   global.css trzyma Outfit na wadze 900 i wygrywał z zakresem).
+   Treść do czytania = Big Shoulders (opsz tekstowy, ta sama rodzina co Inline).
+   Allison zostaje na marce w menu. Great Rebellion na graffiti.
    ============================================================ */
+
+@font-face {
+  font-family: "Big Shoulders Inline";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/BigShouldersInline/BigShouldersInline-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: EaseDouble;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/BigShouldersInline/BigShouldersInline-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: EaseDouble;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/BigShouldersInline/BigShouldersInline-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: EaseDouble;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/BigShouldersInline/BigShouldersInline-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: EaseDouble;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/BigShouldersInline/BigShouldersInline-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Big Shoulders";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText/BigShouldersText-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Arial Narrow";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText/BigShouldersText-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Arial Narrow";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText/BigShouldersText-Variable.woff2") format("woff2");
+}
+
+/* Allison — monoline jak „męskiego” w logo; tylko marka w menu */
+@font-face {
+  font-family: Allison;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Allison/Allison-Regular.woff2") format("woff2");
+}
 
 :root {
   /* --- kolory marki --- */
@@ -55,11 +132,112 @@
   --c-white: var(--brand-green-100);
   --c-graphite: var(--brand-black);
   --c-light-graphite: var(--brand-green-700);
+  --font-family: "Big Shoulders", sans-serif;
+  --font-body: "Big Shoulders", sans-serif;
+  --second-family: "Big Shoulders Inline", sans-serif;
 }
 
 /* tło strony — oryginał ustawia je z JS per podstrona (mapa eZ) */
 body {
   background-color: var(--brand-green);
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
+}
+
+/* etykiety z szablonu były kapitalikami Arial Narrow — w skrypcie bez uppercase */
+.contact-section_contactItemTitle__13wo5 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+/* nagłówki — jawna rodzina, opsz display, żeby widać podwójną kreskę */
+.section__title,
+.page__title,
+.pricing__catName,
+.team__name,
+.reviews__value,
+.cta__text,
+.about-section_title__vZ6sb,
+.hero-section_greating__1OyC1,
+.hero-section_title__DTVen,
+.contact-section_title__BU1nF,
+.styled-button_variant-project__d69KU,
+.styled-button_variant-about__Qo12W,
+.styled-button_variant-projects-page__Ip_FH,
+.projects-section_projectButton__ET6Jm {
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: none;
+  font-variation-settings: "wght" 900, "opsz" 72;
+  letter-spacing: 0.08em;
+  line-height: 1.12;
+}
+
+/* trzy linie w hero — szablon miał 73%, stąd nachodzenie y/j na „Męskiego” */
+.hero-section_title__DTVen {
+  line-height: 1.18;
+  letter-spacing: 0.1em;
+}
+
+/* lista usług: szablon był pod 4–5 krótkich nazw; nasze pozycje muszą
+   zmieścić się w 100svh, bez translateY które ucinało górę */
+.projects-section_root__aoLKL {
+  align-items: stretch;
+}
+.projects-section_projectsList__ORU43,
+.projects-section_projectsList__ORU43 li,
+.projects-section_projectButton__ET6Jm {
+  overflow: visible;
+}
+.projects-section_projectsListWrapper__023fW {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.projects-section_projectsList__ORU43 {
+  transform: none;
+  width: 100%;
+  padding: 8svh calc(16 / var(--vw-screen) * 100 * 1vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
+  font-size: clamp(1.6rem, 10svh, 4.8rem);
+  line-height: 1.12;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .projects-section_root__aoLKL {
+    overflow: visible;
+    align-items: stretch;
+  }
+  .projects-section_projectsListWrapper__023fW {
+    display: block;
+    height: auto;
+  }
+  .projects-section_projectsList__ORU43 {
+    display: block;
+    padding-left: calc(15 / var(--vw-screen) * 100 * 1vw);
+  }
+  .projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
+    white-space: normal;
+    font-size: calc(52 / var(--vw-screen) * 100 * 1vw);
+  }
+}
+
+/* treść z szablonu (opisy, hero, kontakt) — ten sam skrypt, bez faux-bold */
+.hero-section_text__GA552 strong,
+.about-section_description__S5CUq,
+.contact-section_contactItemValue__eQtfA {
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
+  letter-spacing: 0.02em;
 }
 
 .home-page_root__Btl_R {
@@ -79,4 +257,14 @@ body {
 /* ikona myszki w hero — w oryginale miała zakodowany na sztywno #0E0E0E */
 .hero-section_icon__agoNi path {
   stroke: var(--brand-green-100);
+}
+
+/* krótsze „okno" usług — mniej martwego scrolla zanim wejdzie sekcja o nas */
+.home-page_projectsWindow__efvqh {
+  height: 360svh;
+}
+@media screen and (max-width: 768px) {
+  .home-page_projectsWindow__efvqh {
+    height: 360svh;
+  }
 }

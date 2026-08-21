@@ -41,10 +41,10 @@
   align-items: center;
   gap: calc(10 / var(--vw-screen) * 100 * 1vw);
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
-  font-weight: 900;
-  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.05em;
+  font-family: Allison, cursive;
+  font-weight: 400;
+  font-size: calc(24 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.04em;
   white-space: nowrap;
 }
 .nav__mark {
@@ -70,10 +70,13 @@
 .nav__link {
   position: relative;
   color: var(--text-primary);
-  font-family: "Arial Narrow", sans-serif;
-  font-weight: 700;
-  font-size: calc(19 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.02em;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  text-transform: uppercase;
   transition: color .3s var(--ease-out-quart);
 }
 .nav__link::after {
@@ -119,10 +122,12 @@
   border-radius: 999px;
   background: var(--brand-green-300);
   color: var(--brand-black);
-  font-family: EaseDouble, sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
   font-weight: 600;
-  font-size: calc(17 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.02em;
+  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   white-space: nowrap;
   transition: background-color .3s var(--ease-out-quart), transform .3s var(--ease-out-quart);
 }
@@ -187,11 +192,13 @@
   display: block;
   padding: calc(10 / var(--vw-screen) * 100 * 1vw) 0;
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
-  font-weight: 900;
-  font-size: clamp(38px, 11vw, 76px);
-  line-height: 1.02;
-  letter-spacing: -0.06em;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: clamp(40px, 10vw, 72px);
+  line-height: 1.12;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   opacity: 0;
   transform: translateY(18px);
   transition: color .3s var(--ease-out-quart);
@@ -216,8 +223,10 @@
   flex-wrap: wrap;
   gap: 8px 24px;
   color: var(--brand-green-200);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: 17px;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 15px;
 }
 .menu__foot a { color: inherit; }
 .menu__foot a:hover { color: var(--brand-green-300); }
@@ -230,9 +239,12 @@
   border-radius: 999px;
   background: var(--brand-green-300);
   color: var(--brand-black);
-  font-family: EaseDouble, sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* blokada przewijania pod otwartym panelem */

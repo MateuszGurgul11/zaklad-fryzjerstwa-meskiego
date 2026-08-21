@@ -44,11 +44,11 @@
 
 .section__title {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(72 / var(--vw-screen) * 100 * 1vw);
-  line-height: 0.92;
-  letter-spacing: -0.06em;
+  line-height: 1;
+  letter-spacing: 0.08em;
 }
 @media screen and (max-width: 768px) {
   .section__title { font-size: calc(44 / var(--vw-screen) * 100 * 1vw); }
@@ -57,19 +57,23 @@
 .section__lead {
   max-width: calc(520 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-200);
-  font-family: "Arial Narrow", sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
   font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
-  line-height: 1.35;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
 }
 
 .eyebrow {
   display: inline-block;
   margin-bottom: calc(12 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-300);
-  font-family: "Arial Narrow", sans-serif;
-  font-weight: 700;
-  font-size: calc(14 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: 0.18em;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -82,10 +86,12 @@
   gap: calc(10 / var(--vw-screen) * 100 * 1vw);
   padding: calc(16 / var(--vw-screen) * 100 * 1vw) calc(28 / var(--vw-screen) * 100 * 1vw);
   border-radius: 999px;
-  font-family: EaseDouble, sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
   font-weight: 600;
-  font-size: calc(17 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.02em;
+  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   transition: background-color .3s var(--ease-out-quart), color .3s var(--ease-out-quart),
               transform .3s var(--ease-out-quart);
 }
@@ -112,15 +118,16 @@
 }
 .pricing__catName {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(40 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.05em;
+  letter-spacing: 0.08em;
+  line-height: 1.12;
 }
 .pricing__catNote {
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
 }
 
 .pricing__row {
@@ -135,34 +142,36 @@
 
 .pricing__name {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-size: calc(22 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   transition: color .3s var(--ease-out-quart);
 }
 .pricing__desc {
   grid-column: 1 / 2;
   margin-top: calc(6 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
-  line-height: 1.35;
+  font-family: var(--font-body);
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
+  line-height: 1.45;
   max-width: calc(640 / var(--vw-screen) * 100 * 1vw);
 }
 .pricing__time {
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
   white-space: nowrap;
 }
 .pricing__price {
   min-width: calc(90 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-300);
-  font-family: EaseDouble, sans-serif;
-  font-weight: 900;
-  font-size: calc(24 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.04em;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: calc(22 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.03em;
   text-align: right;
   white-space: nowrap;
 }
@@ -201,15 +210,16 @@
 .team__name {
   margin-top: calc(18 / var(--vw-screen) * 100 * 1vw);
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(30 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: -0.05em;
+  letter-spacing: 0.08em;
+  line-height: 1.12;
 }
 .team__nick {
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(16 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
 }
 
 /* ------------------------------------------------------------------ *
@@ -222,16 +232,20 @@
 }
 .reviews__value {
   color: var(--brand-green-300);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(96 / var(--vw-screen) * 100 * 1vw);
   line-height: 1;
-  letter-spacing: -0.07em;
+  letter-spacing: 0.08em;
 }
 .reviews__meta {
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
   font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
 }
 
 .reviews__grid {
@@ -253,15 +267,21 @@
 .review__stars { color: var(--brand-green-300); font-size: calc(15 / var(--vw-screen) * 100 * 1vw); letter-spacing: .2em; }
 .review__text {
   color: var(--text-primary);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(19 / var(--vw-screen) * 100 * 1vw);
-  line-height: 1.4;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .review__author {
   margin-top: auto;
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(15 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: calc(14 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.04em;
 }
 
 /* ------------------------------------------------------------------ *
@@ -302,18 +322,17 @@
 .info__label {
   margin-bottom: calc(14 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-500);
-  font-family: "Arial Narrow", sans-serif;
-  font-weight: 700;
-  font-size: calc(13 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.04em;
 }
 .info__body {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
-  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-size: calc(24 / var(--vw-screen) * 100 * 1vw);
   line-height: 1.45;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
 }
 .info__body a:hover { color: var(--brand-green-300); }
 
@@ -322,11 +341,11 @@
 .hours td {
   padding: calc(12 / var(--vw-screen) * 100 * 1vw) 0;
   color: var(--text-primary);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  font-family: var(--font-body);
+  font-size: calc(22 / var(--vw-screen) * 100 * 1vw);
 }
 .hours td:last-child { text-align: right; color: var(--brand-green-200); white-space: nowrap; }
-.hours tr[data-today] td { color: var(--brand-green-300); font-weight: 700; }
+.hours tr[data-today] td { color: var(--brand-green-300); font-weight: 400; }
 .hours .is-closed { color: var(--brand-green-500); }
 
 /* ------------------------------------------------------------------ *
@@ -354,11 +373,11 @@
 }
 .page__title {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(120 / var(--vw-screen) * 100 * 1vw);
-  line-height: 0.86;
-  letter-spacing: -0.07em;
+  line-height: 1.12;
+  letter-spacing: 0.08em;
 }
 @media screen and (max-width: 768px) {
   .page { padding-top: calc(120 / var(--vw-screen) * 100 * 1vw); }
@@ -368,9 +387,12 @@
   max-width: calc(680 / var(--vw-screen) * 100 * 1vw);
   margin-top: calc(24 / var(--vw-screen) * 100 * 1vw);
   color: var(--brand-green-200);
-  font-family: "Arial Narrow", sans-serif;
-  font-size: calc(22 / var(--vw-screen) * 100 * 1vw);
-  line-height: 1.4;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* pasek z zachętą do rezerwacji */
@@ -385,10 +407,10 @@
 @media screen and (max-width: 768px) { .cta { flex-direction: column; align-items: flex-start; } }
 .cta__text {
   color: var(--text-primary);
-  font-family: EaseDouble, sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-weight: 900;
   font-size: calc(44 / var(--vw-screen) * 100 * 1vw);
-  line-height: 1;
-  letter-spacing: -0.05em;
+  line-height: 1.12;
+  letter-spacing: 0.08em;
 }
 @media screen and (max-width: 768px) { .cta__text { font-size: calc(30 / var(--vw-screen) * 100 * 1vw); } }

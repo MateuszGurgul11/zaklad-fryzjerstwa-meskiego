@@ -28,6 +28,18 @@
     return fontPromise;
   }
 
+  /* Great Rebellion nie ma ą/ę/ł/ń/ś/ć/ż/ź — graffiti dostałoby puste glify */
+  var FOLD = {
+    'ą': 'a', 'Ą': 'A', 'ć': 'c', 'Ć': 'C', 'ę': 'e', 'Ę': 'E',
+    'ł': 'l', 'Ł': 'L', 'ń': 'n', 'Ń': 'N', 'ś': 's', 'Ś': 'S',
+    'ż': 'z', 'Ż': 'Z', 'ź': 'z', 'Ź': 'Z'
+  };
+  function foldForGraffiti(text) {
+    return String(text).replace(/[ąćęłńśżźĄĆĘŁŃŚŻŹ]/g, function (c) {
+      return FOLD[c] || c;
+    });
+  }
+
   /* dokładny odpowiednik workera 328 z oryginalnego bundla */
   function buildPaths(font, text, fontSize, letterSpacing, strokeWidth) {
     var chars = text.split('');
@@ -37,8 +49,14 @@
 
     for (var i = 0; i < chars.length; i++) {
       var ch = chars[i];
+      var glyph = font.charToGlyph(ch);
+      if (!glyph || (glyph.unicode == null && ch !== ' ')) {
+        x += font.getAdvanceWidth(ch, fontSize) + fontSize * letterSpacing;
+        continue;
+      }
       var p = font.getPath(ch, x, fontSize, fontSize);
-      paths.push(p.toPathData(2));
+      var d = p.toPathData(2);
+      if (d) paths.push(d);
       var bb = p.getBoundingBox();
       if (isFinite(bb.x1)) {
         x1 = Math.min(x1, bb.x1); y1 = Math.min(y1, bb.y1);
@@ -64,7 +82,7 @@
    * Zwraca obiekt z metodą play(isHover).
    */
   function initHandwrite(host) {
-    var text = host.getAttribute('data-handwrite') || '';
+    var text = foldForGraffiti(host.getAttribute('data-handwrite') || '');
     var color = host.getAttribute('data-color') || '#578bfc';
     var letterSpacing = parseFloat(host.getAttribute('data-letter-spacing') || '0');
     var api = { playing: false, svg: null, tl: null };
@@ -98,6 +116,7 @@
       api.playing = true;
 
       var paths = api.svg.querySelectorAll('path');
+      if (!paths.length) return;
       paths.forEach(function (p) {
         var len = p.getTotalLength();
         gsap.set(p, { strokeDasharray: len, strokeDashoffset: len, fill: 'none' });

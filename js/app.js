@@ -45,14 +45,43 @@
     document.documentElement.style.setProperty('--scrollbar-width', w + 'px');
   }
 
+  function scrollY() {
+    return lenis ? lenis.scroll : (scroller.scrollTop || 0);
+  }
+
+  function resetScroll() {
+    if (lenis) lenis.scrollTo(0, { immediate: true, force: true });
+    if (scroller) scroller.scrollTop = 0;
+    if (window.scrollTo) window.scrollTo(0, 0);
+  }
+
   function initScroll() {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    resetScroll();
+
     lenis = new Lenis({ wrapper: scroller, content: content, lerp: 0.1, smoothWheel: true, autoRaf: false });
     window.__GLOBAL_SCROLL = lenis;
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+
+    ScrollTrigger.scrollerProxy(scroller, {
+      scrollTop: function (v) {
+        if (arguments.length) {
+          if (lenis) lenis.scrollTo(v, { immediate: true, force: true });
+          else scroller.scrollTop = v;
+        }
+        return scrollY();
+      },
+      getBoundingClientRect: function () {
+        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+      },
+      scrollHeight: function () { return content ? content.scrollHeight : scroller.scrollHeight; }
+    });
     ScrollTrigger.defaults({ scroller: scroller });
+    ScrollTrigger.addEventListener('refresh', function () { if (lenis) lenis.resize(); });
     ScrollTrigger.clearScrollMemory('manual');
     lenis.stop();
+    if (scroller) scroller.style.overflow = 'hidden';
   }
 
   /* przewijanie do kotwic w obrębie strony */
@@ -80,8 +109,34 @@
     if (!host) return;
     host.classList.toggle('handwrite-overlay_hover__cdHOt', !!on);
     var api = host.__handwrite__;
-    if (!api) return;
-    if (on) api.play(); else api.reset();
+    if (api) {
+      if (on) api.play(); else api.reset();
+    }
+    if (on) {
+      requestAnimationFrame(function () {
+        fitHandwriteOnScreen(host);
+        requestAnimationFrame(function () { fitHandwriteOnScreen(host); });
+      });
+    } else {
+      var btn = host.closest('.animated-button_root__TXo7Y');
+      if (btn) btn.style.setProperty('--shift', '0px');
+    }
+  }
+
+  /* graffiti jest centrowane na przycisku — długie nazwy wychodzą poza lewą krawędź */
+  function fitHandwriteOnScreen(host) {
+    var btn = host && host.closest('.animated-button_root__TXo7Y');
+    if (!btn) return;
+    btn.style.setProperty('--shift', '0px');
+    var el = host.querySelector('.handwrite-overlay_draw__T8P4e') || host;
+    var pad = Math.max(20, window.innerWidth * 0.03);
+    var r = el.getBoundingClientRect();
+    var vw = window.innerWidth;
+    var shift = 0;
+    if (r.left < pad) shift += pad - r.left;
+    if (r.right + shift > vw - pad) shift -= (r.right + shift) - (vw - pad);
+    if (r.left + shift < pad) shift = pad - r.left;
+    btn.style.setProperty('--shift', Math.round(shift) + 'px');
   }
 
   function initGooeyButton(bodyWrap, opts) {
@@ -146,7 +201,13 @@
    * ------------------------------------------------------------------ */
   function runPreloader(done) {
     var root = $('.preloader_root__KN4wH');
-    if (!root) { if (lenis) lenis.start(); done(); return; }
+    if (!root) {
+      if (scroller) scroller.style.overflow = '';
+      resetScroll();
+      if (lenis) lenis.start();
+      done();
+      return;
+    }
 
     var contentEl = $('.preloader_content__OcKjQ', root);
     var value = $('.preloader_value__bLGU1', root);
@@ -166,6 +227,8 @@
       opacity: 0, duration: 0.6, ease: 'power2.inOut',
       onComplete: function () {
         root.style.display = 'none';
+        if (scroller) scroller.style.overflow = '';
+        resetScroll();
         if (lenis) lenis.start();
         done();
       }
@@ -325,6 +388,13 @@
             trigger: el, start: introStart, end: introEnd, scrub: true, invalidateOnRefresh: true,
             onLeave: function () { if (opts.onVisible) opts.onVisible(true); },
             onEnterBack: function () { if (opts.onVisible) opts.onVisible(false); },
+            onRefresh: function (self) {
+              if (scrollY() < 8) {
+                self.scroll(0);
+                self.animation.progress(0);
+                setCollapsed();
+              }
+            },
             onUpdate: function (self) {
               el.classList.toggle('window-section-wrapper_clipOff__T_DsC', self.progress >= D.epsilon.end);
             }
@@ -365,11 +435,19 @@
       gsap.set(el, { '--width': '0px', '--height': '0px', '--border-radius': '64px' });
       var intro = gsap.to(el, {
         '--width': px(size.width), '--height': px(size.height), '--border-radius': px(size.borderRadius),
-        duration: 1, delay: 0.8, ease: 'power3.out', onComplete: runScrub
+        duration: 1, delay: 0.8, ease: 'power3.out',
+        onComplete: function () {
+          runScrub();
+          if (scrollY() < 8) {
+            resetScroll();
+            setCollapsed();
+          }
+        }
       });
       ScrollTrigger.create({
         trigger: el, start: introStart, end: introEnd,
-        onEnter: function () {
+        onEnter: function (self) {
+          if (scrollY() < 24) return;
           if (intro && intro.isActive()) { intro.kill(); setCollapsed(); runScrub(); }
         }
       });
@@ -391,17 +469,17 @@
     var badtvHost = $('[data-badtv]', root);
     var scrollBtn = $('[data-scroll-btn]', root);
 
-    /* pozycje: najpopularniejsze usługi + kafel prowadzący do pełnego cennika */
+    /* krótkie etykiety — pełne nazwy z Booksy nie mieszczą się w oknie */
     var wszystkie = D.wszystkieUslugi();
-    var items = D.popularne.map(function (nazwa) {
-      var u = wszystkie.filter(function (x) { return x.nazwa === nazwa; })[0];
-      return u ? { tytul: u.nazwa, hw: u.cena + ' zł', href: 'uslugi.html' } : null;
-    }).filter(Boolean);
-
-    items.push({ tytul: 'Combo długie włosy', hw: '160 zł', href: 'uslugi.html' });
-    items.push({ tytul: 'Strzyżenie brody', hw: '70 zł', href: 'uslugi.html' });
-    items.push({ tytul: 'Tata i syn', hw: '140 zł', href: 'uslugi.html' });
-    items.push({ tytul: 'Cały cennik', hw: String(wszystkie.length), href: 'uslugi.html' });
+    var items = [
+      { tytul: 'Fade', hw: '90 zł', href: 'uslugi.html' },
+      { tytul: 'Combo krótkie', hw: '130 zł', href: 'uslugi.html' },
+      { tytul: 'Tylko boki', hw: '70 zł', href: 'uslugi.html' },
+      { tytul: 'Combo długie', hw: '160 zł', href: 'uslugi.html' },
+      { tytul: 'Broda', hw: '70 zł', href: 'uslugi.html' },
+      { tytul: 'Tata i syn', hw: '140 zł', href: 'uslugi.html' },
+      { tytul: 'Cały cennik', hw: String(wszystkie.length), href: 'uslugi.html' }
+    ];
 
     var buttons = items.map(function (it, idx) {
       var li = document.createElement('li');
@@ -413,8 +491,8 @@
             '<span class="styled-button_body__YQ59t"><span><span class="btn-text">' + it.tytul + '</span></span></span>' +
           '</span>' +
           '<div class="handwrite-overlay_root__oa9z7 animated-button_handeWrite__h8Bmg hande-write" ' +
-               'style="color:' + D.akcent + '" data-handwrite="' + it.hw + '" data-color="' + D.akcent + '">' +
-            '<span class="handwrite-overlay_hiddenText__vgaeM">' + it.hw + '</span>' +
+               'style="color:' + D.akcent + '" data-handwrite="' + it.tytul + '" data-color="' + D.akcent + '">' +
+            '<span class="handwrite-overlay_hiddenText__vgaeM">' + it.tytul + '</span>' +
           '</div>' +
         '</a>';
       list.appendChild(li);
@@ -431,15 +509,18 @@
     var badtv = createBadTV(badtvHost, heroTlo.map(function (g) { return g.src; }));
 
     function setActive(i) {
-      if (i === activeIndex) return;
+      var same = i === activeIndex;
       activeIndex = i;
       buttons.forEach(function (b, k) {
         b.a.classList.toggle('projects-section_activeBtn__fTE3m', k === i);
         b.a.classList.toggle('styled-button_active__07_My', k === i);
         showHandwrite(b.hw, k === i && listVisible);
-        if (b.body.__gooeyTo__) b.body.__gooeyTo__(k === i ? 0.9 : 1);
+        gsap.to(b.body, {
+          filter: (k === i && listVisible) ? 'blur(0.18em)' : 'blur(0px)',
+          duration: 0.45, ease: 'hoverEase', overwrite: true
+        });
       });
-      if (heroTlo.length) badtv.setActive(i % heroTlo.length);
+      if (!same && heroTlo.length) badtv.setActive(i % heroTlo.length);
     }
 
     if (!isDesktop()) {
@@ -452,6 +533,23 @@
           onEnter: function () { setActive(i); },
           onEnterBack: function () { setActive(i); }
         });
+      });
+    } else {
+      /* desktop: lista stoi w miejscu — scroll w „oknie" przełącza pozycje, potem idzie do „o nas" */
+      var win = root.closest('[data-window="services"]') || root;
+      ScrollTrigger.create({
+        trigger: win,
+        start: function () { return 'top top+=' + window.innerHeight; },
+        end: function () { return 'bottom bottom-=' + window.innerHeight; },
+        scrub: true,
+        invalidateOnRefresh: true,
+        onUpdate: function (self) {
+          if (!listVisible) return;
+          var n = buttons.length;
+          if (!n) return;
+          var i = Math.min(n - 1, Math.floor(self.progress * n * 0.999));
+          setActive(i);
+        }
       });
     }
     function offsetFor(el) { return (1.2 * window.innerHeight - 0.5 * (el.offsetHeight || 0)) + 'px'; }
@@ -478,6 +576,12 @@
           onComplete: function () {
             b.body.__disableGooeyAnimationButton__ = false;
             if (on && i === 0 && activeIndex < 0) setActive(0);
+            else if (on && i === activeIndex) {
+              gsap.to(b.body, { filter: 'blur(0.18em)', duration: 0.45, ease: 'hoverEase', overwrite: true });
+              showHandwrite(b.hw, true);
+            } else if (!on) {
+              gsap.set(b.body, { filter: 'blur(0px)' });
+            }
           }
         });
       });
@@ -643,11 +747,20 @@
 
       var winProjects = $('[data-window="services"]');
       var winContact = $('[data-window="contact"]');
+      resetScroll();
       if (winProjects) initWindow(winProjects, { inner: true, withOuter: true, onVisible: services && services.reveal });
       if (winContact) initWindow(winContact, { lateInner: true });
 
       ScrollTrigger.refresh();
+      resetScroll();
       window.addEventListener('resize', function () { ScrollTrigger.refresh(); });
+
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function () {
+          ScrollTrigger.refresh();
+          if (scrollY() < 8) resetScroll();
+        });
+      }
     });
   }
 
