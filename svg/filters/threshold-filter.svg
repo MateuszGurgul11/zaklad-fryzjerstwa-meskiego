@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters_root" aria-hidden="true" focusable="false">
+<defs>
+  <filter id="threshold">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"/>
+    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0 0"/>
+  </filter>
+</defs>
+</svg>

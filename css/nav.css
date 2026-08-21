@@ -1,0 +1,243 @@
+/* ============================================================
+   NAWIGACJA
+   ============================================================
+   Szablon miał trzyelementowy pasek z `mix-blend-mode: difference`.
+   Na ciemnej palecie marki dawało to szary, nieczytelny tekst i mieściło
+   tylko trzy odnośniki. Tutaj pełne menu: marka po lewej, odnośniki
+   i przycisk rezerwacji po prawej, a poniżej 900 px — hamburger
+   z pełnoekranowym panelem.
+
+   Krój, skala i pismo odręczne przy najechaniu zostają z szablonu.
+   ============================================================ */
+
+.nav {
+  position: fixed;
+  z-index: var(--z-header);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - var(--scrollbar-width));
+  padding: calc(18 / var(--vw-screen) * 100 * 1vw) var(--pad-x);
+  gap: var(--gap-m);
+  /* bez mix-blend-mode — tekst ma być zawsze czytelny */
+  transition: background-color .4s var(--ease-out-quart),
+              backdrop-filter .4s var(--ease-out-quart),
+              padding .4s var(--ease-out-quart);
+}
+
+/* przyciemniona szybka pojawia się dopiero po odjechaniu od góry */
+.nav.is-scrolled {
+  padding-block: calc(12 / var(--vw-screen) * 100 * 1vw);
+  background-color: rgba(0, 0, 0, .62);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+/* ---------------------------------------------------------- marka */
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: calc(10 / var(--vw-screen) * 100 * 1vw);
+  color: var(--text-primary);
+  font-family: EaseDouble, sans-serif;
+  font-weight: 900;
+  font-size: calc(20 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+}
+.nav__mark {
+  display: block;
+  width: calc(26 / var(--vw-screen) * 100 * 1vw);
+  height: calc(28 / var(--vw-screen) * 100 * 1vw);
+  flex: none;
+}
+.nav__mark svg { width: 100%; height: 100%; fill: currentColor; }
+.nav__brand:hover { color: var(--brand-green-300); }
+
+@media screen and (max-width: 600px) {
+  .nav__brandText { display: none; }
+}
+
+/* ---------------------------------------------------------- odnośniki */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: calc(28 / var(--vw-screen) * 100 * 1vw);
+}
+
+.nav__link {
+  position: relative;
+  color: var(--text-primary);
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: calc(19 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: -0.02em;
+  transition: color .3s var(--ease-out-quart);
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35em;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .35s var(--ease-out-quart);
+}
+.nav__link:hover { color: var(--brand-green-300); }
+.nav__link:hover::after { transform: scaleX(1); }
+
+.nav__link[aria-current="page"] { color: var(--brand-green-300); }
+.nav__link[aria-current="page"]::after { transform: scaleX(1); }
+
+/* pismo odręczne nad odnośnikiem — sygnaturowy efekt z szablonu */
+.nav__hand {
+  position: absolute;
+  left: 50%;
+  top: -0.15em;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  color: var(--brand-green-300);
+  font-family: "Great Rebellion", cursive;
+  font-size: calc(34 / var(--vw-screen) * 100 * 1vw);
+  isolation: isolate;
+  pointer-events: none;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------- CTA */
+.nav__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: calc(10 / var(--vw-screen) * 100 * 1vw) calc(20 / var(--vw-screen) * 100 * 1vw);
+  border-radius: 999px;
+  background: var(--brand-green-300);
+  color: var(--brand-black);
+  font-family: EaseDouble, sans-serif;
+  font-weight: 600;
+  font-size: calc(17 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  transition: background-color .3s var(--ease-out-quart), transform .3s var(--ease-out-quart);
+}
+.nav__cta:hover { background: var(--brand-green-100); transform: translateY(-2px); }
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: calc(24 / var(--vw-screen) * 100 * 1vw);
+}
+
+/* ---------------------------------------------------------- hamburger */
+.nav__burger {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav__burger span {
+  position: absolute;
+  left: 11px;
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text-primary);
+  transition: transform .35s var(--ease-out-quart), opacity .2s linear, background-color .3s;
+}
+.nav__burger span:nth-child(1) { top: 15px; }
+.nav__burger span:nth-child(2) { top: 21px; }
+.nav__burger span:nth-child(3) { top: 27px; }
+
+.nav__burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav__burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav__burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+@media screen and (max-width: 900px) {
+  .nav__links,
+  .nav__cta { display: none; }
+  .nav__burger { display: block; }
+}
+
+/* ---------------------------------------------------------- panel mobilny */
+.menu {
+  position: fixed;
+  z-index: calc(var(--z-header) + 1);
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 96px var(--pad-x) 40px;
+  background: var(--brand-black);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s var(--ease-out-quart), visibility .4s;
+}
+.menu.is-open { opacity: 1; visibility: visible; }
+
+.menu__link {
+  display: block;
+  padding: calc(10 / var(--vw-screen) * 100 * 1vw) 0;
+  color: var(--text-primary);
+  font-family: EaseDouble, sans-serif;
+  font-weight: 900;
+  font-size: clamp(38px, 11vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -0.06em;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: color .3s var(--ease-out-quart);
+}
+.menu.is-open .menu__link { opacity: 1; transform: none; }
+.menu__link:nth-child(1) { transition-delay: .06s; }
+.menu__link:nth-child(2) { transition-delay: .12s; }
+.menu__link:nth-child(3) { transition-delay: .18s; }
+.menu__link:nth-child(4) { transition-delay: .24s; }
+.menu.is-open .menu__link {
+  transition: opacity .5s var(--ease-out-quart), transform .5s var(--ease-out-quart),
+              color .3s var(--ease-out-quart);
+}
+.menu__link:hover,
+.menu__link[aria-current="page"] { color: var(--brand-green-300); }
+
+.menu__foot {
+  margin-top: auto;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-primary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  color: var(--brand-green-200);
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 17px;
+}
+.menu__foot a { color: inherit; }
+.menu__foot a:hover { color: var(--brand-green-300); }
+
+.menu__cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 28px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: var(--brand-green-300);
+  color: var(--brand-black);
+  font-family: EaseDouble, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* blokada przewijania pod otwartym panelem */
+body.menu-open { overflow: hidden; }
+
+/* ---------------------------------------------------------- stary pasek */
+/* markup z szablonu już nieużywany — gdyby gdzieś został, ma się nie pokazywać */
+.header_handwriteWrapper__DJ25K { display: none !important; }

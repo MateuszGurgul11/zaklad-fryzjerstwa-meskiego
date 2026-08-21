@@ -1,0 +1,82 @@
+/* ============================================================
+   MOTYW — Zakład Fryzjerstwa Męskiego
+   ============================================================
+   Paleta marki: czerń (#000) + ciemna zieleń (#253024).
+
+   Plik ładowany PO global.css i page.css, więc nadpisuje paletę
+   oryginału, nie ruszając samych arkuszy — dzięki temu css/global.css
+   i css/page.css nadal są wierną kopią źródła i łatwo je porównać
+   z _Szablon/.
+
+   Mapowanie powierzchni (oryginał -> tutaj):
+     biel  #fff    -> #253024   hero, sekcja "about", tło strony
+     grafit #0E0E0E -> #000     sekcja projektów, stopka/kontakt
+
+   Tekst i akcenty muszą być czytelne na obu tłach, więc pochodzą
+   z rozjaśnień zieleni marki (kontrast wzgl. #253024 = 6,3:1,
+   wzgl. czerni = 9,4:1 — powyżej progu WCAG AA).
+   ============================================================ */
+
+:root {
+  /* --- kolory marki --- */
+  --brand-black: #000;
+  --brand-green: #253024;
+
+  /* --- pochodne: jaśniejsze odcienie zieleni marki --- */
+  --brand-green-100: #edf1ea;  /* tekst podstawowy */
+  --brand-green-200: #c9d6c3;  /* tekst drugorzędny */
+  --brand-green-300: #9db596;  /* akcent — pismo odręczne, podkreślenia */
+  --brand-green-500: #6e8168;  /* tekst wygaszony */
+  --brand-green-700: #35452f;  /* obramowania, subtelne wypełnienia */
+
+  /* --- powierzchnie --- */
+  --main-background-color: var(--brand-green);
+  --background-primary: var(--brand-black);
+  --background-primary-inverse: var(--brand-green);
+
+  /* --- tekst --- */
+  --main-text-color: var(--brand-green-100);
+  --text-primary: var(--brand-green-100);
+  --text-primary-12: rgba(237, 241, 234, 0.12);
+  --text-primary-24: rgba(237, 241, 234, 0.24);
+  --text-primary-32: rgba(237, 241, 234, 0.32);
+  --text-primary-inverse: var(--brand-green-100);
+  --text-secondary-inverse: var(--brand-green-100);
+  --text-tertiary-inverse: rgba(237, 241, 234, 0.24);
+  --text-gray: var(--brand-green-500);
+
+  /* --- akcenty (pismo odręczne, dawniej neony) --- */
+  --text-accent-green: var(--brand-green-300);
+  --text-accent-blue: var(--brand-green-300);
+  --text-red-netfix: var(--brand-green-300);
+
+  /* --- reszta --- */
+  --border-primary: rgba(237, 241, 234, 0.12);
+  --c-white: var(--brand-green-100);
+  --c-graphite: var(--brand-black);
+  --c-light-graphite: var(--brand-green-700);
+}
+
+/* tło strony — oryginał ustawia je z JS per podstrona (mapa eZ) */
+body {
+  background-color: var(--brand-green);
+}
+
+.home-page_root__Btl_R {
+  --placeholder-color: var(--brand-green-700);
+}
+
+/* preloader: z bieli na czerń marki */
+.preloader_root__KN4wH {
+  background-color: var(--brand-black);
+}
+
+::selection {
+  background-color: var(--brand-green-300);
+  color: var(--brand-black);
+}
+
+/* ikona myszki w hero — w oryginale miała zakodowany na sztywno #0E0E0E */
+.hero-section_icon__agoNi path {
+  stroke: var(--brand-green-100);
+}

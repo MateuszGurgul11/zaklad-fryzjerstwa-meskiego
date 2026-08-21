@@ -1,0 +1,394 @@
+=== HERO ===
+{
+ "id": 57,
+ "title": "Hey\nI'm Artem",
+ "aboutText": "Director & Creative Lead. Founder of **[ZHEESHEE studio](https://zheeshee.com/)**. I mix live action with CG \u2014 building worlds, inventing characters, making things that shouldn't exist look real. Or unreal. As long as you can't stop looking at it",
+ "handwrite": {
+  "id": 581,
+  "text": "hey",
+  "color": "#00FE40"
+ }
+}
+=== ABOUT ===
+{
+ "id": 57,
+ "title": "I've directed The Spark short, the Pause Fest intro, a Russ snippet, and commercials for Yandex, Winline, and Haval. Cinematics for Dota2, Rush Royale, Iron Harvest, Hero Wars \u2014 and moooore",
+ "description": "I'm also the founder of Roar Games, where we're building Tenet of the Spark \u2014 an action adventure game with world-switching mechanics. And dad to two cool kids who know every single one of these projects and a husband to wonderful girl who gives me the space to keep creating all of this madness",
+ "AccentWord": [
+  {
+   "id": 501,
+   "link": "projects/keshbek",
+   "handwrite": {
+    "id": 582,
+    "text": "Sber",
+    "color": "#6cea19"
+   }
+  },
+  {
+   "id": 502,
+   "link": "projects/winline_car",
+   "handwrite": {
+    "id": 583,
+    "text": "Winline",
+    "color": "#ffa200"
+   }
+  },
+  {
+   "id": 503,
+   "link": "projects/t-mobile",
+   "handwrite": {
+    "id": 584,
+    "text": "T-Mobile",
+    "color": "#fff700"
+   }
+  },
+  {
+   "id": 504,
+   "link": "projects/tenet-of-the-spark",
+   "handwrite": {
+    "id": 585,
+    "text": "The Spark",
+    "color": "#fff700"
+   }
+  },
+  {
+   "id": 505,
+   "link": "projects/yandex-search",
+   "handwrite": {
+    "id": 586,
+    "text": "Yandex",
+    "color": "#f64747"
+   }
+  },
+  {
+   "id": 506,
+   "link": "projects/haval",
+   "handwrite": {
+    "id": 587,
+    "text": "Haval",
+    "color": "#26ff00"
+   }
+  },
+  {
+   "id": 507,
+   "link": "projects/rush_royale",
+   "handwrite": {
+    "id": 588,
+    "text": "Rush Royale",
+    "color": "#f7ff00"
+   }
+  },
+  {
+   "id": 508,
+   "link": "projects/iron_fan",
+   "handwrite": {
+    "id": 589,
+    "text": "Iron Harvest",
+    "color": "#ff1c00"
+   }
+  },
+  {
+   "id": 509,
+   "link": "projects/hero_wars",
+   "handwrite": {
+    "id": 590,
+    "text": "Hero Wars",
+    "color": "#ff8200"
+   }
+  },
+  {
+   "id": 510,
+   "link": "projects",
+   "handwrite": {
+    "id": 591,
+    "text": "moooore",
+    "color": "#00ff21"
+   }
+  },
+  {
+   "id": 511,
+   "link": "projects/epicenter18_dota",
+   "handwrite": {
+    "id": 592,
+    "text": "Dota2",
+    "color": "#ff0000"
+   }
+  },
+  {
+   "id": 512,
+   "link": "projects/album_promo",
+   "handwrite": {
+    "id": 593,
+    "text": "Russ snippet",
+    "color": "#ff00cf"
+   }
+  },
+  {
+   "id": 513,
+   "link": "projects/billy-pause-fest",
+   "handwrite": {
+    "id": 594,
+    "text": "Pause Fest intro",
+    "color": "#8819c8"
+   }
+  }
+ ]
+}
+=== CONTACT ===
+{
+ "id": 56,
+ "title": "Represented by \u2028Catalyzm",
+ "contactItems": [
+  {
+   "id": 192,
+   "title": "Agent",
+   "value": "Tata Likok/Irina Pavlova",
+   "href": null
+  },
+  {
+   "id": 193,
+   "title": "E-mail",
+   "value": "catalyzminfo@gmail.com",
+   "href": "mailto:catalyzminfo@gmail.com"
+  },
+  {
+   "id": 194,
+   "title": "Phone",
+   "value": "+995 551 597 536",
+   "href": "tel:+995 551 597 536"
+  },
+  {
+   "id": 195,
+   "title": null,
+   "value": "+7 916 685 10 87",
+   "href": "tel:+7 916 685 10 87"
+  }
+ ]
+}
+=== STICKERS ===
+[
+ {
+  "id": 25,
+  "image": {
+   "id": 97,
+   "documentId": "t5d0utbhp5sel55w35cmqli3",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/16_51e786d451.png",
+   "url": "https://imgproxy.artemartemartem.com/7rnvOFKlHY2jD_OkeAro9e7_u6ML7QzwpL4w78t0Vhg/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/16_51e786d451.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/hFBTDdsCQ1SSUG4WhXqecx5t1RnfSOCDDz7DyU1N0KQ/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/16_51e786d451.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/qXo2BEEBKYPcj8V9HhMsZItqXyzgBUEjnEKsas1FgE4/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/16_51e786d451.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/-s076c3NYNzCNOpYqjDhJJG1yptcd-XjHAxEjmY4hgE/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/16_51e786d451.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/7rnvOFKlHY2jD_OkeAro9e7_u6ML7QzwpL4w78t0Vhg/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/16_51e786d451.png",
+     "size": 1920
+    }
+   ],
+   "width": 842,
+   "height": 595
+  }
+ },
+ {
+  "id": 26,
+  "image": {
+   "id": 98,
+   "documentId": "stn9fvsy4tkcqjlcc5b8r358",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/33_2690231656.png",
+   "url": "https://imgproxy.artemartemartem.com/c0ghK2PFWuv8iZXq2ixrXdKK82HMlOFP_EyoE0cMqSs/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/33_2690231656.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/GmRMbChb8YvPUN6A76LvVyzPt2gmi5o5EAsZBaTq9zI/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/33_2690231656.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/VjfKk3LXN--WfY5LR_INQq3E2R2i_EYpVRMLXBUceN0/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/33_2690231656.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/w43WsVixt0Rkr4qeqLy9FgTt5gp9-MdOav8DXkarOxA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/33_2690231656.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/c0ghK2PFWuv8iZXq2ixrXdKK82HMlOFP_EyoE0cMqSs/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/33_2690231656.png",
+     "size": 1920
+    }
+   ],
+   "width": 617,
+   "height": 568
+  }
+ },
+ {
+  "id": 27,
+  "image": {
+   "id": 99,
+   "documentId": "kkp95yfc6e6jl6u70arjd9cf",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/44_19db2c9ad6.png",
+   "url": "https://imgproxy.artemartemartem.com/UQ9o6iEQisRH5Cwu3OJqpSWaI4pTZ6ce8Yi4xrLptkY/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/44_19db2c9ad6.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/TCT6ncDiWVEndCqrHULdP52_mWug884KIa2dAbLJIik/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/44_19db2c9ad6.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/2JJisJTpqIIVtQKZJROLfdPr6yd5MGv_KljvMgWyFYo/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/44_19db2c9ad6.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/-zFBFvl9UBLFRGEnSRDH5UMyROwWyWXAeHvEUKq5fsU/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/44_19db2c9ad6.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/UQ9o6iEQisRH5Cwu3OJqpSWaI4pTZ6ce8Yi4xrLptkY/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/44_19db2c9ad6.png",
+     "size": 1920
+    }
+   ],
+   "width": 617,
+   "height": 568
+  }
+ },
+ {
+  "id": 28,
+  "image": {
+   "id": 100,
+   "documentId": "ef954v08qy5c91stuhlk9we6",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/48_46df254ee0.png",
+   "url": "https://imgproxy.artemartemartem.com/hn9yZwbyQxA_UtocjvCLnAm4zjwaNWOOrR0VP_K35lI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/48_46df254ee0.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/zX8qB6_SG-61EHc0ZIJmKeocinDSESVBguqG2CAvPtE/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/48_46df254ee0.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/budUbYQiNFzueb520Lp935lVOdvIZC5JZNizjbdAQiM/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/48_46df254ee0.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/xQwwsj5jsUbWFAtUiwVkAYzn9P2aJFww7yTerlxLkm0/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/48_46df254ee0.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/hn9yZwbyQxA_UtocjvCLnAm4zjwaNWOOrR0VP_K35lI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/48_46df254ee0.png",
+     "size": 1920
+    }
+   ],
+   "width": 842,
+   "height": 595
+  }
+ },
+ {
+  "id": 29,
+  "image": {
+   "id": 101,
+   "documentId": "jlwl5y7med8zfgc8r3u4hhwp",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/555_7b1737967e.png",
+   "url": "https://imgproxy.artemartemartem.com/zfaTtqR75RTmCIw6Bl6EeW0HXvNlj1ZaN1g4gQPsKEU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/555_7b1737967e.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/CiGSoJ8Kc9bNO0toyEwh0JCPr7TBQyFzUf4cWE6qvYc/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/555_7b1737967e.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/GF96GqqTciA-IjWJ1YRKBPN5ScLgMFL3g7tw7OOVaAY/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/555_7b1737967e.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/xbYD_oNp7gIaWVGPzyLtcU1gEaW0rQRuY-hIlnd2Ppg/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/555_7b1737967e.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/zfaTtqR75RTmCIw6Bl6EeW0HXvNlj1ZaN1g4gQPsKEU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/555_7b1737967e.png",
+     "size": 1920
+    }
+   ],
+   "width": 617,
+   "height": 568
+  }
+ },
+ {
+  "id": 30,
+  "image": {
+   "id": 102,
+   "documentId": "dla82i1b5fyvfhswof26lgd0",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/5555_3b92dacc88.png",
+   "url": "https://imgproxy.artemartemartem.com/IDJt2neuz-a-mUKkMQLOC4bAffh9EWAkmKmZ7CAFusA/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/5555_3b92dacc88.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/s4crsMNPf_-_UQOR0YuEkt0wlxt5azT_OWUEW6UM1-o/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/5555_3b92dacc88.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/qNXCUJYLJCkXymwCPtg1n6gqTL-m_pq7mWeMdN-JHY8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/5555_3b92dacc88.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/C1OgJhvE0KZYsbrPd9u6Mi6rPM4f52hoI38TkfxSRHA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/5555_3b92dacc88.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/IDJt2neuz-a-mUKkMQLOC4bAffh9EWAkmKmZ7CAFusA/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/5555_3b92dacc88.png",
+     "size": 1920
+    }
+   ],
+   "width": 617,
+   "height": 568
+  }
+ },
+ {
+  "id": 31,
+  "image": {
+   "id": 103,
+   "documentId": "rcm0v8uolttqrgummv60lb8d",
+   "mediaType": "image",
+   "alt": null,
+   "mime": "image/png",
+   "originalUrl": "https://admin.artemartemartem.com/uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+   "url": "https://imgproxy.artemartemartem.com/zTX7R3Np2SpH6DhCBYcNq3XIUcIu8sujQdHFJafwqwc/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+   "source": [
+    {
+     "url": "https://imgproxy.artemartemartem.com/IBDTWTcMLi-w0rvJGZrvLh7PWBJMZJovpUQIve6UhNM/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+     "size": 320
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/ofiJMWo3W7E5xXU9cCjhip-wDDWYH0Pjn0jzpZuE8AQ/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+     "size": 720
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/jATC6XWYpCVCsBa6RSPOxKv1KZL7PEljV1HCC9P906I/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+     "size": 1440
+    },
+    {
+     "url": "https://imgproxy.artemartemartem.com/zTX7R3Np2SpH6DhCBYcNq3XIUcIu8sujQdHFJafwqwc/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+     "size": 1920
+    }
+   ],
+   "width": 960,
+   "height": 960
+  }
+ }
+]

@@ -1,0 +1,18 @@
+# aktywna sesja Instagrama — nigdy nie commitować
+_tools/instagram-cookies.txt
+_tools/ig-archive.sqlite
+
+# pobrane surowe media
+assets/instagram/
+
+__pycache__/
+*.pyc
+
+# cache Pythona
+_tools/__pycache__/
+
+# klucze API MCP (Pexels / Unsplash / Pixabay)
+.cursor/mcp.json
+_Szablon/
+.claude/
+.cursor/

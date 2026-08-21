@@ -1,0 +1,1111 @@
+{
+ "props": {
+  "pageProps": {
+   "cms": {
+    "commonData": {
+     "id": 5,
+     "documentId": "a5cigviiyrs8arfxinkg1bod",
+     "createdAt": "2026-01-25T20:13:48.632Z",
+     "updatedAt": "2026-04-15T10:28:49.149Z",
+     "publishedAt": "2026-04-15T10:28:49.191Z",
+     "seo": {
+      "id": 200,
+      "title": null,
+      "description": null,
+      "keywords": null,
+      "theme": null,
+      "structuredData": null,
+      "ogImage": {
+       "id": 2,
+       "documentId": "unwy0lqh5yhcvk4k4lcm8ydr",
+       "mediaType": "image",
+       "alt": null,
+       "mime": "image/png",
+       "originalUrl": "https://admin.artemartemartem.com/uploads/OG_1024x512_99f00de11f.png",
+       "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+       "source": [
+        {
+         "url": "https://imgproxy.artemartemartem.com/QF2rEmwvykILo-j41UuFKk3mG6gSLIwEaA0rXWt8T5Y/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 320
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/1OI3aP_xSLeLasdq-_Mjs_jgjiH83LRNI9_NsuPzSk8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 720
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/WG446ey7IoHsOsm3C-IpNrqhwTV7xz7kAVUq-4Q7uLs/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 1440
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 1920
+        }
+       ],
+       "width": 1024,
+       "height": 512
+      }
+     },
+     "sticers": [
+      {
+       "id": 25,
+       "image": {
+        "id": 97,
+        "documentId": "t5d0utbhp5sel55w35cmqli3",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/16_51e786d451.png",
+        "url": "https://imgproxy.artemartemartem.com/7rnvOFKlHY2jD_OkeAro9e7_u6ML7QzwpL4w78t0Vhg/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/16_51e786d451.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/hFBTDdsCQ1SSUG4WhXqecx5t1RnfSOCDDz7DyU1N0KQ/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/16_51e786d451.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/qXo2BEEBKYPcj8V9HhMsZItqXyzgBUEjnEKsas1FgE4/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/16_51e786d451.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/-s076c3NYNzCNOpYqjDhJJG1yptcd-XjHAxEjmY4hgE/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/16_51e786d451.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/7rnvOFKlHY2jD_OkeAro9e7_u6ML7QzwpL4w78t0Vhg/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/16_51e786d451.png",
+          "size": 1920
+         }
+        ],
+        "width": 842,
+        "height": 595
+       }
+      },
+      {
+       "id": 26,
+       "image": {
+        "id": 98,
+        "documentId": "stn9fvsy4tkcqjlcc5b8r358",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/33_2690231656.png",
+        "url": "https://imgproxy.artemartemartem.com/c0ghK2PFWuv8iZXq2ixrXdKK82HMlOFP_EyoE0cMqSs/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/33_2690231656.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/GmRMbChb8YvPUN6A76LvVyzPt2gmi5o5EAsZBaTq9zI/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/33_2690231656.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/VjfKk3LXN--WfY5LR_INQq3E2R2i_EYpVRMLXBUceN0/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/33_2690231656.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/w43WsVixt0Rkr4qeqLy9FgTt5gp9-MdOav8DXkarOxA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/33_2690231656.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/c0ghK2PFWuv8iZXq2ixrXdKK82HMlOFP_EyoE0cMqSs/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/33_2690231656.png",
+          "size": 1920
+         }
+        ],
+        "width": 617,
+        "height": 568
+       }
+      },
+      {
+       "id": 27,
+       "image": {
+        "id": 99,
+        "documentId": "kkp95yfc6e6jl6u70arjd9cf",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/44_19db2c9ad6.png",
+        "url": "https://imgproxy.artemartemartem.com/UQ9o6iEQisRH5Cwu3OJqpSWaI4pTZ6ce8Yi4xrLptkY/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/44_19db2c9ad6.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/TCT6ncDiWVEndCqrHULdP52_mWug884KIa2dAbLJIik/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/44_19db2c9ad6.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/2JJisJTpqIIVtQKZJROLfdPr6yd5MGv_KljvMgWyFYo/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/44_19db2c9ad6.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/-zFBFvl9UBLFRGEnSRDH5UMyROwWyWXAeHvEUKq5fsU/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/44_19db2c9ad6.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/UQ9o6iEQisRH5Cwu3OJqpSWaI4pTZ6ce8Yi4xrLptkY/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/44_19db2c9ad6.png",
+          "size": 1920
+         }
+        ],
+        "width": 617,
+        "height": 568
+       }
+      },
+      {
+       "id": 28,
+       "image": {
+        "id": 100,
+        "documentId": "ef954v08qy5c91stuhlk9we6",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/48_46df254ee0.png",
+        "url": "https://imgproxy.artemartemartem.com/hn9yZwbyQxA_UtocjvCLnAm4zjwaNWOOrR0VP_K35lI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/48_46df254ee0.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/zX8qB6_SG-61EHc0ZIJmKeocinDSESVBguqG2CAvPtE/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/48_46df254ee0.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/budUbYQiNFzueb520Lp935lVOdvIZC5JZNizjbdAQiM/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/48_46df254ee0.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/xQwwsj5jsUbWFAtUiwVkAYzn9P2aJFww7yTerlxLkm0/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/48_46df254ee0.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/hn9yZwbyQxA_UtocjvCLnAm4zjwaNWOOrR0VP_K35lI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/48_46df254ee0.png",
+          "size": 1920
+         }
+        ],
+        "width": 842,
+        "height": 595
+       }
+      },
+      {
+       "id": 29,
+       "image": {
+        "id": 101,
+        "documentId": "jlwl5y7med8zfgc8r3u4hhwp",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/555_7b1737967e.png",
+        "url": "https://imgproxy.artemartemartem.com/zfaTtqR75RTmCIw6Bl6EeW0HXvNlj1ZaN1g4gQPsKEU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/555_7b1737967e.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/CiGSoJ8Kc9bNO0toyEwh0JCPr7TBQyFzUf4cWE6qvYc/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/555_7b1737967e.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/GF96GqqTciA-IjWJ1YRKBPN5ScLgMFL3g7tw7OOVaAY/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/555_7b1737967e.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/xbYD_oNp7gIaWVGPzyLtcU1gEaW0rQRuY-hIlnd2Ppg/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/555_7b1737967e.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/zfaTtqR75RTmCIw6Bl6EeW0HXvNlj1ZaN1g4gQPsKEU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/555_7b1737967e.png",
+          "size": 1920
+         }
+        ],
+        "width": 617,
+        "height": 568
+       }
+      },
+      {
+       "id": 30,
+       "image": {
+        "id": 102,
+        "documentId": "dla82i1b5fyvfhswof26lgd0",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/5555_3b92dacc88.png",
+        "url": "https://imgproxy.artemartemartem.com/IDJt2neuz-a-mUKkMQLOC4bAffh9EWAkmKmZ7CAFusA/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/5555_3b92dacc88.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/s4crsMNPf_-_UQOR0YuEkt0wlxt5azT_OWUEW6UM1-o/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/5555_3b92dacc88.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/qNXCUJYLJCkXymwCPtg1n6gqTL-m_pq7mWeMdN-JHY8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/5555_3b92dacc88.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/C1OgJhvE0KZYsbrPd9u6Mi6rPM4f52hoI38TkfxSRHA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/5555_3b92dacc88.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/IDJt2neuz-a-mUKkMQLOC4bAffh9EWAkmKmZ7CAFusA/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/5555_3b92dacc88.png",
+          "size": 1920
+         }
+        ],
+        "width": 617,
+        "height": 568
+       }
+      },
+      {
+       "id": 31,
+       "image": {
+        "id": 103,
+        "documentId": "rcm0v8uolttqrgummv60lb8d",
+        "mediaType": "image",
+        "alt": null,
+        "mime": "image/png",
+        "originalUrl": "https://admin.artemartemartem.com/uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+        "url": "https://imgproxy.artemartemartem.com/zTX7R3Np2SpH6DhCBYcNq3XIUcIu8sujQdHFJafwqwc/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+        "source": [
+         {
+          "url": "https://imgproxy.artemartemartem.com/IBDTWTcMLi-w0rvJGZrvLh7PWBJMZJovpUQIve6UhNM/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+          "size": 320
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/ofiJMWo3W7E5xXU9cCjhip-wDDWYH0Pjn0jzpZuE8AQ/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+          "size": 720
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/jATC6XWYpCVCsBa6RSPOxKv1KZL7PEljV1HCC9P906I/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+          "size": 1440
+         },
+         {
+          "url": "https://imgproxy.artemartemartem.com/zTX7R3Np2SpH6DhCBYcNq3XIUcIu8sujQdHFJafwqwc/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/photo_2020_08_13_16_48_03_eed17b68ec.png",
+          "size": 1920
+         }
+        ],
+        "width": 960,
+        "height": 960
+       }
+      }
+     ]
+    },
+    "homePage": {
+     "id": 57,
+     "documentId": "okzllksprnbt88ps4xwhqp8m",
+     "createdAt": "2026-01-21T12:10:10.015Z",
+     "updatedAt": "2026-06-01T15:44:00.851Z",
+     "publishedAt": "2026-06-01T15:44:01.016Z",
+     "seo": {
+      "id": 248,
+      "title": "artem shcherbakov",
+      "description": "Hey! I'm Artem. Director & Creative Lead. Maybe you see my work. Do you think \"No\"? Check it!",
+      "keywords": "artem shcherbakov, zheeshee, cgi, live action, studio, ad, director",
+      "theme": null,
+      "structuredData": null,
+      "ogImage": {
+       "id": 2,
+       "documentId": "unwy0lqh5yhcvk4k4lcm8ydr",
+       "mediaType": "image",
+       "alt": null,
+       "mime": "image/png",
+       "originalUrl": "https://admin.artemartemartem.com/uploads/OG_1024x512_99f00de11f.png",
+       "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+       "source": [
+        {
+         "url": "https://imgproxy.artemartemartem.com/QF2rEmwvykILo-j41UuFKk3mG6gSLIwEaA0rXWt8T5Y/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 320
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/1OI3aP_xSLeLasdq-_Mjs_jgjiH83LRNI9_NsuPzSk8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 720
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/WG446ey7IoHsOsm3C-IpNrqhwTV7xz7kAVUq-4Q7uLs/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 1440
+        },
+        {
+         "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+         "size": 1920
+        }
+       ],
+       "width": 1024,
+       "height": 512
+      }
+     },
+     "heroSection": {
+      "id": 57,
+      "title": "Hey\nI'm Artem",
+      "aboutText": "Director & Creative Lead. Founder of **[ZHEESHEE studio](https://zheeshee.com/)**. I mix live action with CG — building worlds, inventing characters, making things that shouldn't exist look real. Or unreal. As long as you can't stop looking at it",
+      "handwrite": {
+       "id": 581,
+       "text": "hey",
+       "color": "#00FE40"
+      }
+     },
+     "aboutSection": {
+      "id": 57,
+      "title": "I've directed The Spark short, the Pause Fest intro, a Russ snippet, and commercials for Yandex, Winline, and Haval. Cinematics for Dota2, Rush Royale, Iron Harvest, Hero Wars — and moooore",
+      "description": "I'm also the founder of Roar Games, where we're building Tenet of the Spark — an action adventure game with world-switching mechanics. And dad to two cool kids who know every single one of these projects and a husband to wonderful girl who gives me the space to keep creating all of this madness",
+      "AccentWord": [
+       {
+        "id": 501,
+        "link": "projects/keshbek",
+        "handwrite": {
+         "id": 582,
+         "text": "Sber",
+         "color": "#6cea19"
+        }
+       },
+       {
+        "id": 502,
+        "link": "projects/winline_car",
+        "handwrite": {
+         "id": 583,
+         "text": "Winline",
+         "color": "#ffa200"
+        }
+       },
+       {
+        "id": 503,
+        "link": "projects/t-mobile",
+        "handwrite": {
+         "id": 584,
+         "text": "T-Mobile",
+         "color": "#fff700"
+        }
+       },
+       {
+        "id": 504,
+        "link": "projects/tenet-of-the-spark",
+        "handwrite": {
+         "id": 585,
+         "text": "The Spark",
+         "color": "#fff700"
+        }
+       },
+       {
+        "id": 505,
+        "link": "projects/yandex-search",
+        "handwrite": {
+         "id": 586,
+         "text": "Yandex",
+         "color": "#f64747"
+        }
+       },
+       {
+        "id": 506,
+        "link": "projects/haval",
+        "handwrite": {
+         "id": 587,
+         "text": "Haval",
+         "color": "#26ff00"
+        }
+       },
+       {
+        "id": 507,
+        "link": "projects/rush_royale",
+        "handwrite": {
+         "id": 588,
+         "text": "Rush Royale",
+         "color": "#f7ff00"
+        }
+       },
+       {
+        "id": 508,
+        "link": "projects/iron_fan",
+        "handwrite": {
+         "id": 589,
+         "text": "Iron Harvest",
+         "color": "#ff1c00"
+        }
+       },
+       {
+        "id": 509,
+        "link": "projects/hero_wars",
+        "handwrite": {
+         "id": 590,
+         "text": "Hero Wars",
+         "color": "#ff8200"
+        }
+       },
+       {
+        "id": 510,
+        "link": "projects",
+        "handwrite": {
+         "id": 591,
+         "text": "moooore",
+         "color": "#00ff21"
+        }
+       },
+       {
+        "id": 511,
+        "link": "projects/epicenter18_dota",
+        "handwrite": {
+         "id": 592,
+         "text": "Dota2",
+         "color": "#ff0000"
+        }
+       },
+       {
+        "id": 512,
+        "link": "projects/album_promo",
+        "handwrite": {
+         "id": 593,
+         "text": "Russ snippet",
+         "color": "#ff00cf"
+        }
+       },
+       {
+        "id": 513,
+        "link": "projects/billy-pause-fest",
+        "handwrite": {
+         "id": 594,
+         "text": "Pause Fest intro",
+         "color": "#8819c8"
+        }
+       }
+      ]
+     },
+     "projectsSection": {
+      "id": 56,
+      "projects": [
+       {
+        "id": 613,
+        "documentId": "h7v9vjeyrnxl21gif8l5shm9",
+        "title": "billy pause fest",
+        "slug": "billy-pause-fest",
+        "type": "cgi",
+        "createdAt": "2026-01-21T12:11:31.419Z",
+        "updatedAt": "2026-05-06T13:38:03.709Z",
+        "publishedAt": "2026-05-06T13:38:04.008Z",
+        "year": "2025-01-30",
+        "role": null,
+        "subtitle": "Our short film 'Billy' and three works by other directors are part of the Pause. Originals collection of 2022 year with the theme,\"Beyond 2050\". Pause Originals is a digital platform dedicated to nurturing and showcasing the creative endeavours of emerging filmmakers for over a decade.",
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1342,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": null,
+         "video": {
+          "id": 800,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1189738405/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=ad808ccaad17703382abba5f0bedd806aaa3973040e2b36f0f20430f3fd59818",
+          "poster": {
+           "id": 280,
+           "documentId": "ppqovx9yqbhj0csc04e9ott5",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/png",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+           "url": "https://imgproxy.artemartemartem.com/mgYsF_0VMmLybDY2fqe1inh2daTJYr3CDd3zwu69AMU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/1S1JbOmpg8RrtaC5aTs1GimyjR7RpyLZvLZp588cW-Y/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/b3nRY5V_LnXwf2WgrRrHqDB5MOpGkGFfRY--vkiCToI/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/fHF-DzRQC2ADimodJuINBZYEGfg5BGlagppBtA9kLX4/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/mgYsF_0VMmLybDY2fqe1inh2daTJYr3CDd3zwu69AMU/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/Snimok_ekrana_2026_05_06_163621_f7982904a2.png",
+             "size": 1920
+            }
+           ],
+           "width": 2878,
+           "height": 1611
+          },
+          "video": {
+           "id": 279,
+           "documentId": "y0xi49c2p5oel6ud2ebgplhm",
+           "name": "d54a01a1-9dbe4b15",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "d54a01a1_9dbe4b15_eb2988ffe7",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 4100.56,
+           "url": "https://admin.artemartemartem.com/uploads/d54a01a1_9dbe4b15_eb2988ffe7.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-05-06T13:35:48.016Z",
+           "updatedAt": "2026-05-06T13:35:48.016Z",
+           "publishedAt": "2026-05-06T13:35:48.017Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 591,
+        "documentId": "iozyfua8njdt6v86lw5zeqmb",
+        "title": "yandex search",
+        "slug": "yandex-search",
+        "type": "live action",
+        "createdAt": "2026-01-21T12:12:46.366Z",
+        "updatedAt": "2026-04-23T12:28:38.188Z",
+        "publishedAt": "2026-04-23T12:28:38.350Z",
+        "year": "2024-01-29",
+        "role": "artem shcerbakov & philip yriev",
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1279,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": null,
+         "video": {
+          "id": 762,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1179248037/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=bfb249da1c7b86cd6b79fdb7eac95a68ec537e0eae74ed121b5e33b7266ad500",
+          "poster": {
+           "id": 196,
+           "documentId": "d7rzg3nsfcl4frlc40myix78",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/jpeg",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+           "url": "https://imgproxy.artemartemartem.com/X0MZaLIFEovPA_QO0jyDVAR60SgzIBxoV4mknu8mLl0/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/H6wABojltF6-Ez3FEdjYG58h1LrOIIwFrm3eqO5U2TE/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/i56hdf8utFKnwkvgTyoH4zGZ1Vpz0wDH61MzI2PwM30/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/Xh2mikqTkyJrNvh2iMsLJifV2qBPe1pz_rCbZod0QfI/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/X0MZaLIFEovPA_QO0jyDVAR60SgzIBxoV4mknu8mLl0/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/yandeks_serchprev_e55ca3d51e.jpeg",
+             "size": 1920
+            }
+           ],
+           "width": 2051,
+           "height": 1149
+          },
+          "video": {
+           "id": 195,
+           "documentId": "i0eg0ufa6hgrufa8slkme5sc",
+           "name": "яндекс.серч3сек.mp4",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "yandeks_serch3sek_ca95642ec7",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 4276.78,
+           "url": "https://admin.artemartemartem.com/uploads/yandeks_serch3sek_ca95642ec7.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-04-01T14:48:32.959Z",
+           "updatedAt": "2026-04-01T14:48:32.959Z",
+           "publishedAt": "2026-04-01T14:48:32.960Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 560,
+        "documentId": "jndjl0sczpbshlxkdjknr1rb",
+        "title": "winline",
+        "slug": "winline_car",
+        "type": "live action",
+        "createdAt": "2026-04-07T13:15:33.511Z",
+        "updatedAt": "2026-04-12T18:31:09.940Z",
+        "publishedAt": "2026-04-12T18:31:10.041Z",
+        "year": "2026-04-05",
+        "role": null,
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1197,
+         "isVideo": true,
+         "saveAspectRatio": false,
+         "image": null,
+         "video": {
+          "id": 713,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1180816365/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=9ff2a582cdb827c2b9c545b580acfcc3a03c447d56d606c3c81e9cb1ea345916",
+          "poster": {
+           "id": 272,
+           "documentId": "fa17goadasjbahwoq0so1n1e",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/jpeg",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/vinlajn_prev_05c0ec65bf.jpeg",
+           "url": "https://imgproxy.artemartemartem.com/9-r3Womf5alrYyFIokFGuwwD1k3FqAApdpSvU1uU438/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/vinlajn_prev_05c0ec65bf.jpeg",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/TGfFNRf6dc_qGSRgLr8GTgPX--n2AfWqgNLVajg-qSo/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/vinlajn_prev_05c0ec65bf.jpeg",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/Ftc6PWck8IrYQyKtFs_3fBsaZdj93wVGxL6OyVBnRM4/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/vinlajn_prev_05c0ec65bf.jpeg",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/4aGu7xhP2Xw74TPg4KGOwNZuXIcK7goc7pFNK8TetWU/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/vinlajn_prev_05c0ec65bf.jpeg",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/9-r3Womf5alrYyFIokFGuwwD1k3FqAApdpSvU1uU438/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/vinlajn_prev_05c0ec65bf.jpeg",
+             "size": 1920
+            }
+           ],
+           "width": 2879,
+           "height": 1580
+          },
+          "video": {
+           "id": 273,
+           "documentId": "jyrp6yunf790ln470i39p6j1",
+           "name": "винлайн6сек.mp4",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "vinlajn6sek_6026f65602",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 16532.13,
+           "url": "https://admin.artemartemartem.com/uploads/vinlajn6sek_6026f65602.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-04-07T13:12:04.121Z",
+           "updatedAt": "2026-04-07T13:12:04.121Z",
+           "publishedAt": "2026-04-07T13:12:04.121Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 603,
+        "documentId": "jm6b0amv2h9cuidm0nnaibro",
+        "title": "the spark",
+        "slug": "tenet-of-the-spark",
+        "type": "cgi",
+        "createdAt": "2026-01-21T12:13:02.133Z",
+        "updatedAt": "2026-04-28T15:01:51.597Z",
+        "publishedAt": "2026-04-28T15:01:51.921Z",
+        "year": "2022-01-31",
+        "role": null,
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1318,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": null,
+         "video": {
+          "id": 780,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1179227453/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=94a952aa8ef23833f70037112db2837317f7041dc4a07b74d2e1f838b4759276",
+          "poster": {
+           "id": 179,
+           "documentId": "iv1fgyyc0o2y5y0nr2xjxlw1",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/jpeg",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/sparkprev_650da5962b.jpeg",
+           "url": "https://imgproxy.artemartemartem.com/GH-O8Y4PrO7TmUeMauCoHF2aSjmZZHXaIrHQN8KpIr0/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/sparkprev_650da5962b.jpeg",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/lcxGDOwCilhHfMB6HJtczlauJBkCCk3kdF72zjYP-_g/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/sparkprev_650da5962b.jpeg",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/9SPay7LIfg37401uZAld9pQHxDvUB8sz-6gwP3mfvKs/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/sparkprev_650da5962b.jpeg",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/dONiOQ96Dar6-DkFTymjc2ej0nxb39zrDlZMnzQ4VpY/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/sparkprev_650da5962b.jpeg",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/GH-O8Y4PrO7TmUeMauCoHF2aSjmZZHXaIrHQN8KpIr0/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/sparkprev_650da5962b.jpeg",
+             "size": 1920
+            }
+           ],
+           "width": 2051,
+           "height": 859
+          },
+          "video": {
+           "id": 178,
+           "documentId": "tpqh6r58fs36tuo1b5dg4qg9",
+           "name": "спарк6сек.mp4",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "spark6sek_fab89af017",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 6492.58,
+           "url": "https://admin.artemartemartem.com/uploads/spark6sek_fab89af017.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-04-01T13:55:39.064Z",
+           "updatedAt": "2026-04-01T13:55:39.064Z",
+           "publishedAt": "2026-04-01T13:55:39.064Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 596,
+        "documentId": "ohchkflhu20uymzp9dgvdeqc",
+        "title": "haval",
+        "slug": "haval",
+        "type": "cgi",
+        "createdAt": "2026-01-21T12:13:29.732Z",
+        "updatedAt": "2026-04-23T13:17:32.061Z",
+        "publishedAt": "2026-04-23T13:17:32.166Z",
+        "year": "2025-01-29",
+        "role": null,
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1293,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": {
+          "id": 16,
+          "documentId": "pjpn30xr20y4f1hvk9g05n1u",
+          "mediaType": "image",
+          "alt": null,
+          "mime": "image/jpeg",
+          "originalUrl": "https://admin.artemartemartem.com/uploads/img_55_92cb462e6c.jpg",
+          "url": "https://imgproxy.artemartemartem.com/SbIw_QD2jvHFOfj0gmkFmzqO-reqwv_cxdwH93tQyrE/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/img_55_92cb462e6c.jpg",
+          "source": [
+           {
+            "url": "https://imgproxy.artemartemartem.com/vHPcR4RRpwEIhY-mxMBIV7i3oAPu3spbQTv1VmcMyGE/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 320
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/UG1UYWF_DFX2DE1orZ5wsqf0N6wmu8zeaatvDK-gcSw/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 720
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/Wx1S6zNtAEmwvQ4-W3joVyXwTVdm8zBt0_C18n1oQUA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 1440
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/SbIw_QD2jvHFOfj0gmkFmzqO-reqwv_cxdwH93tQyrE/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 1920
+           }
+          ],
+          "width": 960,
+          "height": 505
+         },
+         "video": {
+          "id": 769,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1174921849/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=65f72238600d109365f3cb286c037821e1b674ce678a7ac968da421adca8eaec",
+          "poster": {
+           "id": 213,
+           "documentId": "uw1vdawxf1bwdj6etxra6003",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/jpeg",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/haval_a7a3a3344b.jpeg",
+           "url": "https://imgproxy.artemartemartem.com/96QOruFgea_Qm6b_TZEti6sMc_dzZUzE2kVmAkbDWKQ/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/haval_a7a3a3344b.jpeg",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/c1_yfzGxnYpJT834FlGdS9sbSRVam46M5rxe8e29K6g/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/haval_a7a3a3344b.jpeg",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/GROlxm-muIOc27goy4D42hNN9BHTkbINFMWr7BQPiI0/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/haval_a7a3a3344b.jpeg",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/4wUwhB0Fezmrf3_hV5pyArndlOSsA2oAwxEhK1FAcv8/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/haval_a7a3a3344b.jpeg",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/96QOruFgea_Qm6b_TZEti6sMc_dzZUzE2kVmAkbDWKQ/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/haval_a7a3a3344b.jpeg",
+             "size": 1920
+            }
+           ],
+           "width": 2045,
+           "height": 849
+          },
+          "video": {
+           "id": 19,
+           "documentId": "mcmpt2wz4i369nnvhmdsvuwr",
+           "name": "13_Haval_dircut.mp4",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "13_Haval_dircut_695bdffa4f",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 48861.29,
+           "url": "https://admin.artemartemartem.com/uploads/13_Haval_dircut_695bdffa4f.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-02-25T18:21:01.783Z",
+           "updatedAt": "2026-02-25T18:21:01.783Z",
+           "publishedAt": "2026-02-25T18:21:01.783Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 597,
+        "documentId": "x0s8ynf813sp7tjxpk58atoq",
+        "title": "t-mobile",
+        "slug": "tmobile",
+        "type": "live action",
+        "createdAt": "2026-01-21T12:13:42.215Z",
+        "updatedAt": "2026-04-23T13:19:23.679Z",
+        "publishedAt": "2026-04-23T13:19:24.010Z",
+        "year": "2025-01-29",
+        "role": "artem shcerbakov & philip yriev",
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1295,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": null,
+         "video": {
+          "id": 771,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1179219498/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=3ce6e6cd0b4f53a49c5f918d2f18b1f699aaca8ea184bc0d00c8ba3ad686c3fc",
+          "poster": {
+           "id": 182,
+           "documentId": "z7fp6pp047o52no5y415nub1",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/jpeg",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/tbankprev_3acaf379f0.jpeg",
+           "url": "https://imgproxy.artemartemartem.com/di9e-yq-EWyZQMXhsHzSbJPJ6xH0OwIhh6rDlEicWcM/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/tbankprev_3acaf379f0.jpeg",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/0viL5gyueybWO2gBKk_91M_ZArEQ0ClhQ3Y7UCgzL94/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/tbankprev_3acaf379f0.jpeg",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/RPE9oKndCrzW46BBzsAPWBuhPWM2qks0I-WBRgSObQY/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/tbankprev_3acaf379f0.jpeg",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/WpFf_i_A0YbxoBgo-tlQdi5RYpT6oVw89ATZQZzGMPw/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/tbankprev_3acaf379f0.jpeg",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/di9e-yq-EWyZQMXhsHzSbJPJ6xH0OwIhh6rDlEicWcM/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/tbankprev_3acaf379f0.jpeg",
+             "size": 1920
+            }
+           ],
+           "width": 2042,
+           "height": 868
+          },
+          "video": {
+           "id": 173,
+           "documentId": "kgyxcc0qb5hcz3u5mjc3wgt4",
+           "name": "тбанк5сек.mp4",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "tbank5sek_46f98a41e5",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 4533.99,
+           "url": "https://admin.artemartemartem.com/uploads/tbank5sek_46f98a41e5.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-04-01T13:27:25.404Z",
+           "updatedAt": "2026-04-01T13:27:25.404Z",
+           "publishedAt": "2026-04-01T13:27:25.404Z"
+          }
+         }
+        }
+       },
+       {
+        "id": 611,
+        "documentId": "v4vqvzw6u4hpfoloz11whocy",
+        "title": "yandex tech",
+        "slug": "yandex-tech",
+        "type": "live action",
+        "createdAt": "2026-01-21T12:13:15.273Z",
+        "updatedAt": "2026-05-06T13:22:11.583Z",
+        "publishedAt": "2026-05-06T13:22:11.714Z",
+        "year": "2025-01-30",
+        "role": "artem shcerbakov & alexey krupnik",
+        "subtitle": null,
+        "showRoleOnWorksPage": null,
+        "media": {
+         "id": 1331,
+         "isVideo": true,
+         "saveAspectRatio": null,
+         "image": {
+          "id": 16,
+          "documentId": "pjpn30xr20y4f1hvk9g05n1u",
+          "mediaType": "image",
+          "alt": null,
+          "mime": "image/jpeg",
+          "originalUrl": "https://admin.artemartemartem.com/uploads/img_55_92cb462e6c.jpg",
+          "url": "https://imgproxy.artemartemartem.com/SbIw_QD2jvHFOfj0gmkFmzqO-reqwv_cxdwH93tQyrE/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/img_55_92cb462e6c.jpg",
+          "source": [
+           {
+            "url": "https://imgproxy.artemartemartem.com/vHPcR4RRpwEIhY-mxMBIV7i3oAPu3spbQTv1VmcMyGE/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 320
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/UG1UYWF_DFX2DE1orZ5wsqf0N6wmu8zeaatvDK-gcSw/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 720
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/Wx1S6zNtAEmwvQ4-W3joVyXwTVdm8zBt0_C18n1oQUA/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 1440
+           },
+           {
+            "url": "https://imgproxy.artemartemartem.com/SbIw_QD2jvHFOfj0gmkFmzqO-reqwv_cxdwH93tQyrE/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/img_55_92cb462e6c.jpg",
+            "size": 1920
+           }
+          ],
+          "width": 960,
+          "height": 505
+         },
+         "video": {
+          "id": 793,
+          "link": "https://player.vimeo.com/progressive_redirect/playback/1189738678/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&log_user=0&signature=bfa02f2284a88f542f3070613ab85ac7d55b438dbd814c8894dc209a5b3ac320",
+          "poster": {
+           "id": 277,
+           "documentId": "r9c8we4nyyjs276tarwao1fm",
+           "mediaType": "image",
+           "alt": null,
+           "mime": "image/png",
+           "originalUrl": "https://admin.artemartemartem.com/uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+           "url": "https://imgproxy.artemartemartem.com/eVyEUi4mtJUOH0ec3HXL_CtG1_k1MErRjdtQhrorKBI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+           "source": [
+            {
+             "url": "https://imgproxy.artemartemartem.com/761n-tJ9pUMEDaCnezCy6m9zDr_C1E4YWZkeziY-6WI/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+             "size": 320
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/XEXhzZumS7lL10p1O5sdlDUWpx_g-7HaBtRE8ZN_tF8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+             "size": 720
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/tcS65yOLVIm22uXK-XY49s6Eqg7dK0i9bvh6ONJTfnU/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+             "size": 1440
+            },
+            {
+             "url": "https://imgproxy.artemartemartem.com/eVyEUi4mtJUOH0ec3HXL_CtG1_k1MErRjdtQhrorKBI/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/Snimok_ekrana_2026_05_06_162132_c7b3fc5a1c.png",
+             "size": 1920
+            }
+           ],
+           "width": 2873,
+           "height": 1777
+          },
+          "video": {
+           "id": 276,
+           "documentId": "byiwbv9tsm9658mt6blv40oy",
+           "name": "ced87efe-e557ebd1",
+           "alternativeText": null,
+           "caption": null,
+           "width": null,
+           "height": null,
+           "formats": null,
+           "hash": "ced87efe_e557ebd1_ca373ba4cc",
+           "ext": ".mp4",
+           "mime": "video/mp4",
+           "size": 2506.29,
+           "url": "https://admin.artemartemartem.com/uploads/ced87efe_e557ebd1_ca373ba4cc.mp4",
+           "previewUrl": null,
+           "provider": "local",
+           "provider_metadata": null,
+           "createdAt": "2026-05-06T13:20:21.719Z",
+           "updatedAt": "2026-05-06T13:20:21.719Z",
+           "publishedAt": "2026-05-06T13:20:21.719Z"
+          }
+         }
+        }
+       }
+      ]
+     },
+     "contactSection": {
+      "id": 56,
+      "title": "Represented by  Catalyzm",
+      "contactItems": [
+       {
+        "id": 192,
+        "title": "Agent",
+        "value": "Tata Likok/Irina Pavlova",
+        "href": null
+       },
+       {
+        "id": 193,
+        "title": "E-mail",
+        "value": "catalyzminfo@gmail.com",
+        "href": "mailto:catalyzminfo@gmail.com"
+       },
+       {
+        "id": 194,
+        "title": "Phone",
+        "value": "+995 551 597 536",
+        "href": "tel:+995 551 597 536"
+       },
+       {
+        "id": 195,
+        "title": null,
+        "value": "+7 916 685 10 87",
+        "href": "tel:+7 916 685 10 87"
+       }
+      ]
+     }
+    },
+    "totalProjectsCount": 39,
+    "pageSeoData": {
+     "id": 248,
+     "title": "artem shcherbakov",
+     "description": "Hey! I'm Artem. Director & Creative Lead. Maybe you see my work. Do you think \"No\"? Check it!",
+     "keywords": "artem shcherbakov, zheeshee, cgi, live action, studio, ad, director",
+     "theme": null,
+     "structuredData": null,
+     "ogImage": {
+      "id": 2,
+      "documentId": "unwy0lqh5yhcvk4k4lcm8ydr",
+      "mediaType": "image",
+      "alt": null,
+      "mime": "image/png",
+      "originalUrl": "https://admin.artemartemartem.com/uploads/OG_1024x512_99f00de11f.png",
+      "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+      "source": [
+       {
+        "url": "https://imgproxy.artemartemartem.com/QF2rEmwvykILo-j41UuFKk3mG6gSLIwEaA0rXWt8T5Y/dpr:1/f:webp/q:90/rs:fill:320/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+        "size": 320
+       },
+       {
+        "url": "https://imgproxy.artemartemartem.com/1OI3aP_xSLeLasdq-_Mjs_jgjiH83LRNI9_NsuPzSk8/dpr:1/f:webp/q:90/rs:fill:720/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+        "size": 720
+       },
+       {
+        "url": "https://imgproxy.artemartemartem.com/WG446ey7IoHsOsm3C-IpNrqhwTV7xz7kAVUq-4Q7uLs/dpr:1/f:webp/q:90/rs:fill:1440/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+        "size": 1440
+       },
+       {
+        "url": "https://imgproxy.artemartemartem.com/rs5maXPG3DulFcAaWYDzPhcvqt0jXKJNnNKHgvLIIGo/dpr:1/f:webp/q:90/rs:fill:1920/plain/local:///uploads/OG_1024x512_99f00de11f.png",
+        "size": 1920
+       }
+      ],
+      "width": 1024,
+      "height": 512
+     }
+    }
+   }
+  },
+  "__N_SSP": true
+ },
+ "page": "/",
+ "query": {},
+ "buildId": "5KdaG9OrLKXYYac9w0Y8N",
+ "isFallback": false,
+ "isExperimentalCompile": false,
+ "gssp": true,
+ "scriptLoader": []
+}

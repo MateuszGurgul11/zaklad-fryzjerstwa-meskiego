@@ -1,0 +1,280 @@
+{
+ "@context": "https://schema.org",
+ "@type": "HairSalon",
+ "@id": "https://booksy.com/pl-pl/129109_zaklad-fryzjerstwa-meskiego_barber-shop_15608_poznan",
+ "name": "Zakład Fryzjerstwa Męskiego",
+ "url": "https://booksy.com/pl-pl/129109_zaklad-fryzjerstwa-meskiego_barber-shop_15608_poznan",
+ "description": "Miejsce, w którym poczujesz się swobodnie, zapomnisz na chwilę o galopującym świecie. \r\nWyjdziesz od nas naładowany pozytywną energią oraz ze świetną fryzurą.",
+ "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg",
+ "logo": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/logo/93e691a433c149bbacf91365eb2ae3-zaklad-fryzjerstwa-meskiego-logo-fdd318dbdc2c45f7a87d501ce000d4-booksy.jpeg",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Mieczysława Niedziałkowskiego, 2, 61-578, Poznań, Wilda",
+  "addressCountry": "pl",
+  "addressLocality": "Poznań",
+  "addressRegion": "wielkopolskie",
+  "postalCode": "61-578"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 52.39952001,
+  "longitude": 16.92594
+ },
+ "priceRange": "PLN 50 - 350",
+ "currenciesAccepted": "PLN",
+ "paymentAccepted": "Cash",
+ "sameAs": [
+  "https://www.instagram.com/zaklad_fryzjerstwa_meskiego/"
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "opens": "09:00",
+   "closes": "20:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Saturday"
+   ],
+   "opens": "10:00",
+   "closes": "17:00"
+  }
+ ],
+ "aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": 4.970856102003643,
+  "reviewCount": 549
+ },
+ "makesOffer": [
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie brody",
+   "priceCurrency": "PLN",
+   "price": 90,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie męskie- fade",
+   "priceCurrency": "PLN",
+   "price": 100,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie średnich/długich włosów",
+   "priceCurrency": "PLN",
+   "price": 120,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo krótkie włosy",
+   "priceCurrency": "PLN",
+   "price": 150,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo krótkie włosy z odsiwianiem brody lub głowy",
+   "priceCurrency": "PLN",
+   "price": 200,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo długie włosy",
+   "priceCurrency": "PLN",
+   "price": 180,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Trwała do 9 tygodni (tylko góra)",
+   "priceCurrency": "PLN",
+   "price": 240,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Trwała do 9 tygodni (cała głowa)",
+   "priceCurrency": "PLN",
+   "price": 290,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Trwała do 9 tygodni (tylko góra) + strzyżenie",
+   "priceCurrency": "PLN",
+   "price": 300,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Trwała do 9 tygodni (cała głowa) + strzyżenie",
+   "priceCurrency": "PLN",
+   "price": 350,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie maszynką na jedną długość",
+   "priceCurrency": "PLN",
+   "price": 50,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Tylko Boki",
+   "priceCurrency": "PLN",
+   "price": 70,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie brody",
+   "priceCurrency": "PLN",
+   "price": 70,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Buzz Cut",
+   "priceCurrency": "PLN",
+   "price": 80,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie męskie - fade",
+   "priceCurrency": "PLN",
+   "price": 90,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie włosów średnich/długich",
+   "priceCurrency": "PLN",
+   "price": 120,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo krótkie włosy",
+   "priceCurrency": "PLN",
+   "price": 130,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo długie włosy",
+   "priceCurrency": "PLN",
+   "price": 160,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo z odsiwianiem brody",
+   "priceCurrency": "PLN",
+   "price": 180,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Combo z odsiwianiem- broda i głowa",
+   "priceCurrency": "PLN",
+   "price": 230,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie dzieci 7- 12 rok życia",
+   "priceCurrency": "PLN",
+   "price": 70,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Strzyżenie tata i synek do 8 lat 🙂",
+   "priceCurrency": "PLN",
+   "price": 140,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  },
+  {
+   "@type": "Offer",
+   "name": "Brodaty tata i syn do 8 lat",
+   "priceCurrency": "PLN",
+   "price": 170,
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/biz_photo/c9d64a31ddc54d248848f4d0e33805-zaklad-fryzjerstwa-meskiego-biz-photo-464b587d93184f829464dcdc4d2cce-booksy.jpeg"
+  }
+ ],
+ "review": [
+  {
+   "@type": "Review",
+   "author": {
+    "@type": "Person",
+    "name": "Eryk N…"
+   },
+   "datePublished": "2026-08-21",
+   "reviewBody": "👌👌",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": 5,
+    "bestRating": "5",
+    "worstRating": "1"
+   }
+  },
+  {
+   "@type": "Review",
+   "author": {
+    "@type": "Person",
+    "name": "Norbert P…"
+   },
+   "datePublished": "2026-08-21",
+   "reviewBody": "Polecam",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": 5,
+    "bestRating": "5",
+    "worstRating": "1"
+   }
+  },
+  {
+   "@type": "Review",
+   "author": {
+    "@type": "Person",
+    "name": "Marcin B…"
+   },
+   "datePublished": "2026-08-18",
+   "reviewBody": "Polecam Łukasza!",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": 5,
+    "bestRating": "5",
+    "worstRating": "1"
+   }
+  }
+ ],
+ "employee": [
+  {
+   "name": "Paula - Bejbik",
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/resource_photos/f5fc52360e7c4e3faa3688eaa32783fc.jpeg"
+  },
+  {
+   "name": "Zosia",
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/resource_photos/950f99d7c7e74c47ac64d33679bdef23.jpeg"
+  },
+  {
+   "name": "Łuki Zyss Zysnarski",
+   "image": "https://d375139ucebi94.cloudfront.net/region2/pl/129109/resource_photos/98b777bdc81f48468d1039bf9897ffd9.jpeg"
+  }
+ ]
+}
