@@ -41,11 +41,15 @@
   align-items: center;
   gap: calc(10 / var(--vw-screen) * 100 * 1vw);
   color: var(--text-primary);
-  font-family: Allison, cursive;
-  font-weight: 400;
-  font-size: calc(24 / var(--vw-screen) * 100 * 1vw);
-  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: calc(18 / var(--vw-screen) * 100 * 1vw);
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  text-transform: uppercase;
   white-space: nowrap;
+  transition: color .3s var(--ease-out-quart);
 }
 .nav__mark {
   display: block;
@@ -106,7 +110,7 @@
   width: fit-content;
   height: 100%;
   color: var(--brand-green-300);
-  font-family: "Great Rebellion", cursive;
+  font-family: WindSong, cursive;
   font-size: calc(34 / var(--vw-screen) * 100 * 1vw);
   isolation: isolate;
   pointer-events: none;

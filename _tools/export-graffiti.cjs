@@ -2,7 +2,7 @@
  * Eksport "graffiti" — napisów odręcznych do tła stopki.
  *
  * Ten sam algorytm co w handwrite.js (i co w workerze oryginału):
- * opentype.js zamienia tekst z fontu Great Rebellion na ścieżki, jeden
+ * opentype.js zamienia tekst z fontu WindSong na ścieżki, jeden
  * <path> na znak. Różnica wobec _tools/export-handwrite.cjs jest taka, że
  * tutaj pliki mają wymiary zgodne z viewBox (żeby <img> znał proporcje)
  * i od razu wypełnienie w kolorze marki — nie są rysowane po kolei,
@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 const opentype = require('../js/vendor/opentype.min.js');
 
-const buf = fs.readFileSync(path.join(__dirname, '..', 'fonts', 'GreatRebellion.ttf'));
+const buf = fs.readFileSync(path.join(__dirname, '..', 'fonts', 'WindSong', 'WindSong-Regular.ttf'));
 const font = opentype.parse(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength));
 
 const FONT_SIZE = 100;

@@ -309,25 +309,26 @@
   /* ------------------------------------------------------------------ *
    *  HERO
    * ------------------------------------------------------------------ */
+  function prepareHero() {
+    var mark = $('.hero-section_mark__img');
+    if (mark) {
+      gsap.set(mark, { opacity: 0, filter: 'blur(0.3em)' });
+    }
+  }
+
   function initHero() {
     var hero = $('.hero-section_root__ZsTA_');
     if (!hero) return;
 
-    var greetWrap = $('.hero-section_greating__1OyC1 > [data-gooey]', hero);
-    var handwrite = $('.hero-section_handwrite__h878T', hero);
-    var gif = $('.hero-section_headGif__mEIXP', hero);
+    var mark = $('.hero-section_mark__img', hero);
     var textBlock = $('.hero-section_text__GA552', hero);
     var scrollWord = $('[data-scroll-word]', hero);
 
     if (scrollWord) scrollWord.textContent = isDesktop() ? 'przewiń' : 'przesuń';
 
-    if (greetWrap) {
-      attachGooey(greetWrap, 1, 255, { opacity: 0.7, filter: 'blur(0.3em)' });
-      gsap.to(greetWrap.__gsapGooeyAnimation__, { progress: 1, duration: 1.4, ease: 'power2.inOut', delay: 0.2 });
-    }
-    if (gif) {
-      gsap.fromTo(gif, { opacity: 0, filter: 'blur(0.3em)' },
-        { opacity: 1, filter: 'blur(0px)', ease: 'power3.out', duration: 1.8, delay: 0.6 });
+    if (mark) {
+      gsap.fromTo(mark, { opacity: 0, filter: 'blur(0.3em)' },
+        { opacity: 1, filter: 'blur(0px)', ease: 'power3.out', duration: 1.6, delay: 0.15 });
     }
     if (textBlock) {
       var p = $('p[data-split]', textBlock);
@@ -339,7 +340,6 @@
         gsap.to(a.timeline, { progress: 1, duration: 0.9, ease: 'power2.inOut', delay: 0.6 + i * 0.05 });
       });
     }
-    if (handwrite) setTimeout(function () { showHandwrite(handwrite, true); }, 900);
   }
 
   /* ------------------------------------------------------------------ *
@@ -517,7 +517,7 @@
         showHandwrite(b.hw, k === i && listVisible);
         gsap.to(b.body, {
           filter: (k === i && listVisible) ? 'blur(0.18em)' : 'blur(0px)',
-          duration: 0.45, ease: 'hoverEase', overwrite: true
+          duration: 0.25, ease: 'hoverEase', overwrite: true
         });
       });
       if (!same && heroTlo.length) badtv.setActive(i % heroTlo.length);
@@ -568,17 +568,16 @@
     function reveal(on) {
       listVisible = on;
       list.classList.toggle('projects-section_visible__JchWB', on);
+      if (on) setActive(activeIndex < 0 ? 0 : activeIndex);
       buttons.forEach(function (b, i) {
         gsap.killTweensOf(b.body.__gsapGooeyAnimation__);
         b.body.__disableGooeyAnimationButton__ = true;
         gsap.to(b.body.__gsapGooeyAnimation__, {
-          progress: on ? 1 : 0, duration: 1, ease: 'hoverEase', overwrite: true, delay: on ? i * 0.06 : 0,
+          progress: on ? 1 : 0, duration: 0.4, ease: 'hoverEase', overwrite: true, delay: on ? i * 0.03 : 0,
           onComplete: function () {
             b.body.__disableGooeyAnimationButton__ = false;
-            if (on && i === 0 && activeIndex < 0) setActive(0);
-            else if (on && i === activeIndex) {
-              gsap.to(b.body, { filter: 'blur(0.18em)', duration: 0.45, ease: 'hoverEase', overwrite: true });
-              showHandwrite(b.hw, true);
+            if (on && i === activeIndex) {
+              gsap.to(b.body, { filter: 'blur(0.18em)', duration: 0.25, ease: 'hoverEase', overwrite: true });
             } else if (!on) {
               gsap.set(b.body, { filter: 'blur(0px)' });
             }
@@ -601,6 +600,76 @@
     }
 
     return { reveal: reveal };
+  }
+
+  /* ------------------------------------------------------------------ *
+   *  SNAP NA SEKCJI USŁUG
+   *  Lenis steruje scrollem, więc CSS scroll-snap jest ignorowany.
+   *  Przechwytujemy gest w dół, który minąłby moment pełnego otwarcia
+   *  okna (koniec intro = 1× viewport) — wtedy lista jest już widoczna.
+   * ------------------------------------------------------------------ */
+  function initServicesSnap(win) {
+    if (!win || !lenis) return;
+
+    var snapping = false;
+    var lockUntil = 0;
+    var armed = true;
+
+    function easeOutCubic(x) {
+      var t = x - 1;
+      return t * t * t + 1;
+    }
+
+    function snapY() {
+      return Math.round(win.getBoundingClientRect().top + scrollY() + window.innerHeight);
+    }
+
+    function go(y) {
+      snapping = true;
+      lockUntil = Date.now() + 480;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var dist = Math.abs(y - scrollY());
+      var duration = reduce ? 0 : Math.max(0.35, Math.min(0.95, 0.25 + dist / 2200));
+      lenis.scrollTo(y, {
+        duration: duration,
+        lock: true,
+        force: true,
+        easing: easeOutCubic,
+        onComplete: function () {
+          snapping = false;
+          lockUntil = Date.now() + 280;
+        }
+      });
+    }
+
+    function consume(data) {
+      if (data.event && data.event.cancelable) data.event.preventDefault();
+      data.event.lenisStopPropagation = true;
+    }
+
+    lenis.on('virtual-scroll', function (data) {
+      var now = Date.now();
+      if (snapping || now < lockUntil) {
+        consume(data);
+        return;
+      }
+
+      var dy = data.deltaY;
+      if (!dy) return;
+
+      var snap = snapY();
+      var current = lenis.animatedScroll;
+      var projected = lenis.targetScroll + dy;
+      var hyst = window.innerHeight * 0.3;
+
+      if (current < snap - hyst) armed = true;
+
+      if (dy > 0 && armed && current < snap && projected > snap) {
+        consume(data);
+        armed = false;
+        go(snap);
+      }
+    });
   }
 
   /* ------------------------------------------------------------------ *
@@ -733,6 +802,7 @@
     initScroll();
     initHandwrites();
     $$('a[href^="#"]').forEach(bindAnchor);
+    prepareHero();
 
     runPreloader(function () {
       initHeader();
@@ -748,7 +818,10 @@
       var winProjects = $('[data-window="services"]');
       var winContact = $('[data-window="contact"]');
       resetScroll();
-      if (winProjects) initWindow(winProjects, { inner: true, withOuter: true, onVisible: services && services.reveal });
+      if (winProjects) {
+        initWindow(winProjects, { inner: true, withOuter: true, onVisible: services && services.reveal });
+        initServicesSnap(winProjects);
+      }
       if (winContact) initWindow(winContact, { lateInner: true });
 
       ScrollTrigger.refresh();

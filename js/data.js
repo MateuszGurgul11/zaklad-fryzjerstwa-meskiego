@@ -207,7 +207,7 @@ window.DATA = {
   },
   epsilon: { end: 0.999, begin: 0.01 },
 
-  handwriteFont: 'fonts/GreatRebellion.ttf'
+  handwriteFont: 'fonts/WindSong/WindSong-Regular.ttf'
 };
 
 /* ------------------------------------------------------------------ *

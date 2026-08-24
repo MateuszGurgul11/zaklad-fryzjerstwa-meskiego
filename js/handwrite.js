@@ -1,17 +1,17 @@
 /*
  * Napisy odręczne (handwrite overlay).
  *
- * Oryginał generuje je w Web Workerze przez opentype.js z fontu
- * "Great Rebellion.ttf": każdy znak → osobny <path>, a GSAP animuje
- * stroke-dashoffset (efekt pisania) i dopiero potem wypełnia literę kolorem.
- * Poniżej ten sam algorytm — łącznie z liczeniem viewBox 1:1 z workera.
+ * Oryginał generuje je w Web Workerze przez opentype.js: każdy znak →
+ * osobny <path>, a GSAP animuje stroke-dashoffset (efekt pisania)
+ * i dopiero potem wypełnia literę kolorem. Tu ten sam algorytm,
+ * tylko krój to WindSong (jak marka w menu), nie Great Rebellion.
  */
 (function () {
   'use strict';
 
-  var FONT_URL = (window.DATA && window.DATA.handwriteFont) || 'fonts/GreatRebellion.ttf';
+  var FONT_URL = (window.DATA && window.DATA.handwriteFont) || 'fonts/WindSong/WindSong-Regular.ttf';
   var FONT_SIZE = 100;
-  var STROKE_WIDTH = 2;
+  var STROKE_WIDTH = 1;
 
   var fontPromise = null;
   var cache = new Map();
@@ -28,7 +28,7 @@
     return fontPromise;
   }
 
-  /* Great Rebellion nie ma ą/ę/ł/ń/ś/ć/ż/ź — graffiti dostałoby puste glify */
+  /* WindSong nie pokrywa wszystkich polskich glifów — puste ścieżki zamiast ą/ę/ł */
   var FOLD = {
     'ą': 'a', 'Ą': 'A', 'ć': 'c', 'Ć': 'C', 'ę': 'e', 'Ę': 'E',
     'ł': 'l', 'Ł': 'L', 'ń': 'n', 'Ń': 'N', 'ś': 's', 'Ś': 'S',

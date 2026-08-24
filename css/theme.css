@@ -19,7 +19,7 @@
    Nagłówki = Big Shoulders Inline (własna rodzina, nie alias EaseDouble —
    global.css trzyma Outfit na wadze 900 i wygrywał z zakresem).
    Treść do czytania = Big Shoulders (opsz tekstowy, ta sama rodzina co Inline).
-   Allison zostaje na marce w menu. Great Rebellion na graffiti.
+   WindSong — marka w menu i napisy odręczne (dawniej Allison / Great Rebellion).
    ============================================================ */
 
 @font-face {
@@ -85,13 +85,28 @@
   src: url("../fonts/BigShouldersText/BigShouldersText-Variable.woff2") format("woff2");
 }
 
-/* Allison — monoline jak „męskiego” w logo; tylko marka w menu */
+/* WindSong — pismo odręczne jak w logo; aliasy na stare nazwy z szablonu */
+@font-face {
+  font-family: WindSong;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/WindSong/WindSong-Regular.woff2") format("woff2");
+}
 @font-face {
   font-family: Allison;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Allison/Allison-Regular.woff2") format("woff2");
+  src: url("../fonts/WindSong/WindSong-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Great Rebellion";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/WindSong/WindSong-Regular.woff2") format("woff2");
 }
 
 :root {
@@ -161,8 +176,6 @@ body {
 .reviews__value,
 .cta__text,
 .about-section_title__vZ6sb,
-.hero-section_greating__1OyC1,
-.hero-section_title__DTVen,
 .contact-section_title__BU1nF,
 .styled-button_variant-project__d69KU,
 .styled-button_variant-about__Qo12W,
@@ -175,10 +188,45 @@ body {
   line-height: 1.12;
 }
 
-/* trzy linie w hero — szablon miał 73%, stąd nachodzenie y/j na „Męskiego” */
-.hero-section_title__DTVen {
-  line-height: 1.18;
-  letter-spacing: 0.1em;
+/* hero: duże logo po lewej, akapit po prawej */
+.hero-section_greating__1OyC1 {
+  grid-column: 1 / 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(40 / var(--vw-screen) * 100 * 1vw);
+  transform: none;
+  font-size: unset;
+  font-weight: unset;
+  letter-spacing: unset;
+}
+.hero-section_mark {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.hero-section_mark__img {
+  display: block;
+  width: min(72vw, 92svh);
+  max-height: 72svh;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  filter: blur(0.3em);
+}
+.hero-section_gifWrapper__1Fy_P,
+.hero-section_headGif__mEIXP {
+  display: none;
+}
+@media screen and (max-width: 1279px) {
+  .hero-section_greating__1OyC1 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .hero-section_mark__img {
+    width: min(78vw, 42svh);
+    max-height: 42svh;
+  }
 }
 
 /* lista usług: szablon był pod 4–5 krótkich nazw; nasze pozycje muszą
