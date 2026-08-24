@@ -32,7 +32,7 @@ window.DATA = {
     booksy: 'https://booksy.com/pl-pl/129109_zaklad-fryzjerstwa-meskiego_barber-shop_15608_poznan',
     instagram: 'https://www.instagram.com/zaklad_fryzjerstwa_meskiego/',
     facebook: 'https://www.facebook.com/zakladfryzjerstwameskiego/',
-    mapa: 'https://www.google.com/maps/search/?api=1&query=52.39952001,16.92594'
+    mapa: 'https://maps.app.goo.gl/z5b4VUzzxaJSrFUF9'
   },
 
   opinie: {

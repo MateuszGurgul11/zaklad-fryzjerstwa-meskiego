@@ -297,10 +297,11 @@ def page_galeria():
 
 
 def page_kontakt():
-    mapa = ("https://www.openstreetmap.org/export/embed.html?bbox=%s%%2C%s%%2C%s%%2C%s"
-            "&layer=mapnik&marker=%s%%2C%s"
-            % (FIRMA["lng"] - 0.004, FIRMA["lat"] - 0.002,
-               FIRMA["lng"] + 0.004, FIRMA["lat"] + 0.002, FIRMA["lat"], FIRMA["lng"]))
+    mapa = ("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.3949636534862"
+            "!2d16.923620876558942!3d52.39951767202986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768"
+            "!4f13.1!3m3!1m2!1s0x47045b736c23d5a9%3A0xdc2aaf98baf3dc3d"
+            "!2sZak%C5%82ad%20Fryzjerstwa%20M%C4%99skiego%20Barber%20Shop"
+            "!5e0!3m2!1spl!2spl!4v1787576203519!5m2!1spl!2spl")
     body = """        <section class="page">
           <span class="eyebrow">Kontakt</span>
           <h1 class="page__title">Wpadnij<br/>na Wildę</h1>
@@ -331,8 +332,10 @@ def page_kontakt():
         </section>
 
         <section class="section section--tight">
-          <iframe title="Mapa dojazdu" src="%(mapa)s" loading="lazy"
-                  style="width:100%%;aspect-ratio:16/7;border:0;border-radius:24px"></iframe>
+          <iframe class="map" title="Mapa dojazdu"
+                  src="%(mapa)s"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </section>
 %(cta)s
 """ % {"ulica": esc(FIRMA["ulica"]), "kod": FIRMA["kod"], "miasto": esc(FIRMA["miasto"]),

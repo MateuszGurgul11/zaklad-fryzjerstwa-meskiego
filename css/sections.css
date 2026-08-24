@@ -395,6 +395,20 @@
   letter-spacing: 0.02em;
 }
 
+.map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  border: 0;
+  border-radius: 24px;
+}
+@media screen and (max-width: 768px) {
+  .map { aspect-ratio: 16 / 10; }
+}
+@media screen and (max-width: 480px) {
+  .map { aspect-ratio: 1 / 1; }
+}
+
 /* pasek z zachętą do rezerwacji */
 .cta {
   display: flex;

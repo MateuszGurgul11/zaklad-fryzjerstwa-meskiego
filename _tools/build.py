@@ -52,7 +52,7 @@ LINKI = {
     "booksy": "https://booksy.com/pl-pl/129109_zaklad-fryzjerstwa-meskiego_barber-shop_15608_poznan",
     "instagram": "https://www.instagram.com/zaklad_fryzjerstwa_meskiego/",
     "facebook": "https://www.facebook.com/zakladfryzjerstwameskiego/",
-    "mapa": "https://www.google.com/maps/search/?api=1&query=52.39952001,16.92594",
+    "mapa": "https://maps.app.goo.gl/z5b4VUzzxaJSrFUF9",
 }
 
 OPINIE_META = {"ocena": "5,0", "ocena_num": 4.97, "liczba": 549}
@@ -181,7 +181,7 @@ def jsonld():
             "addressCountry": "PL",
         },
         "geo": {"@type": "GeoCoordinates", "latitude": FIRMA["lat"], "longitude": FIRMA["lng"]},
-        "sameAs": [LINKI["instagram"], LINKI["facebook"], LINKI["booksy"]],
+        "sameAs": [LINKI["instagram"], LINKI["facebook"], LINKI["booksy"], LINKI["mapa"]],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": OPINIE_META["ocena_num"],
