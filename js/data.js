@@ -133,7 +133,6 @@ window.DATA = {
   /* Filmy zakładu w pinie hero (okno usług / Bad TV).
      Galeria na podstronie zostaje na zdjęciach z Booksy. */
   heroTlo: [
-    { src: 'assets/video/zaklad-01.mp4', alt: 'Strzyżenie w zakładzie' },
     { src: 'assets/video/zaklad-02.mp4', alt: 'Praca barbera' }
   ],
 
