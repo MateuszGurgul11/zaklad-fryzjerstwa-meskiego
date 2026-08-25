@@ -254,6 +254,11 @@
 /* blokada przewijania pod otwartym panelem */
 body.menu-open { overflow: hidden; }
 
+/* logo + burger→X nad czarnym panelem */
+body.menu-open .nav {
+  z-index: calc(var(--z-header) + 2);
+}
+
 /* ---------------------------------------------------------- stary pasek */
 /* markup z szablonu już nieużywany — gdyby gdzieś został, ma się nie pokazywać */
 .header_handwriteWrapper__DJ25K { display: none !important; }

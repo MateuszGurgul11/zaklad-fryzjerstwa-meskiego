@@ -283,6 +283,7 @@
 
     function setOpen(open) {
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Zamknij menu' : 'Menu');
       menu.classList.toggle('is-open', open);
       document.body.classList.toggle('menu-open', open);
       if (lenis) open ? lenis.stop() : lenis.start();
@@ -291,6 +292,13 @@
     burger.addEventListener('click', function () {
       setOpen(burger.getAttribute('aria-expanded') !== 'true');
     });
+
+    var brand = $('.nav__brand', header);
+    if (brand) {
+      brand.addEventListener('click', function () {
+        if (burger.getAttribute('aria-expanded') === 'true') setOpen(false);
+      });
+    }
 
     $$('a', menu).forEach(function (a) {
       a.addEventListener('click', function () { setOpen(false); });
@@ -323,8 +331,35 @@
     var mark = $('.hero-section_mark__img', hero);
     var textBlock = $('.hero-section_text__GA552', hero);
     var scrollWord = $('[data-scroll-word]', hero);
+    var scrollDown = $('.hero-section_scrollDown__MUcli', hero);
 
     if (scrollWord) scrollWord.textContent = isDesktop() ? 'przewiń' : 'przesuń';
+
+    if (scrollDown) {
+      scrollDown.setAttribute('role', 'button');
+      scrollDown.setAttribute('tabindex', '0');
+      scrollDown.setAttribute('aria-label', isDesktop() ? 'Przewiń do usług' : 'Przesuń do usług');
+      var goServices = function () {
+        var target = $('[data-window="services"]') || $('#uslugi');
+        if (!target) return;
+        if (lenis) {
+          lenis.scrollTo(target, {
+            offset: 0,
+            duration: 1.15,
+            easing: function (x) { var t = x - 1; return t * t * t + 1; }
+          });
+        } else {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+      scrollDown.addEventListener('click', goServices);
+      scrollDown.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          goServices();
+        }
+      });
+    }
 
     if (mark) {
       gsap.fromTo(mark, { opacity: 0, filter: 'blur(0.3em)' },

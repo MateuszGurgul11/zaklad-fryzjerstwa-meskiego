@@ -221,16 +221,69 @@ body {
 @media screen and (max-width: 1279px) {
   .hero-section_greating__1OyC1 {
     margin-left: 0;
+    margin-top: calc(88 / var(--vw-screen) * 100 * 1vw);
     width: 100%;
+    align-items: flex-start;
   }
   .hero-section_mark__img {
     width: min(78vw, 42svh);
     max-height: 42svh;
   }
 }
+@media screen and (max-width: 768px) {
+  .hero-section_mark__img {
+    width: min(76vw, 24svh);
+    max-height: 24svh;
+  }
+  .hero-section_about__OlYeE {
+    width: min(92vw, 100%);
+    max-width: 92vw;
+    margin-bottom: min(calc(130 / var(--v-min-h) * 100 * 1svh), calc(130 / var(--vw-screen) * 100 * 1vw));
+  }
+  .hero-section_text__GA552 {
+    color: var(--text-primary);
+  }
+  .hero-section_scrollDown__MUcli {
+    bottom: max(20px, env(safe-area-inset-bottom, 0px));
+    gap: 8px;
+    padding: 14px 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    animation: hero-scroll-pulse 2.4s ease-in-out infinite;
+  }
+  .hero-section_scrollDownText__ncHry {
+    font-size: clamp(18px, 4.8vw, 22px);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 1;
+    color: var(--text-primary);
+  }
+  .hero-section_scrollDownIcon__Uo2WA,
+  .hero-section_icon__agoNi {
+    width: 22px;
+    height: 22px;
+  }
+  .hero-section_scrollDownIcon__Uo2WA svg g {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-section_mark__img {
+    width: min(80vw, 21svh);
+    max-height: 21svh;
+  }
+  .hero-section_about__OlYeE {
+    margin-bottom: min(calc(88 / var(--v-min-h) * 100 * 1svh), calc(88 / var(--vw-screen) * 100 * 1vw));
+  }
+}
+@keyframes hero-scroll-pulse {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50% { transform: translateX(-50%) translateY(6px); opacity: 0.72; }
+}
 
-/* lista usług: szablon był pod 4–5 krótkich nazw; nasze pozycje muszą
-   zmieścić się w 100svh, bez translateY które ucinało górę */
+/* lista usług: desktop centruje w oknie; mobile zostawia sticky z page.css
+   (wrapper + lista przyklejone przez środek ekranu jak w szablonie) */
 .projects-section_root__aoLKL {
   align-items: stretch;
 }
@@ -239,42 +292,50 @@ body {
 .projects-section_projectButton__ET6Jm {
   overflow: visible;
 }
-.projects-section_projectsListWrapper__023fW {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.projects-section_projectsList__ORU43 {
-  transform: none;
-  width: 100%;
-  padding: 8svh calc(16 / var(--vw-screen) * 100 * 1vw);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
-  font-size: clamp(1.6rem, 10svh, 4.8rem);
-  line-height: 1.12;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
+@media screen and (min-width: 769px) {
+  .projects-section_projectsListWrapper__023fW {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .projects-section_projectsList__ORU43 {
+    transform: none;
+    width: 100%;
+    padding: 8svh calc(16 / var(--vw-screen) * 100 * 1vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
+    font-size: clamp(1.6rem, 10svh, 4.8rem);
+    line-height: 1.12;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
 }
 @media screen and (max-width: 768px) {
   .projects-section_root__aoLKL {
     overflow: visible;
-    align-items: stretch;
-  }
-  .projects-section_projectsListWrapper__023fW {
-    display: block;
-    height: auto;
-  }
-  .projects-section_projectsList__ORU43 {
-    display: block;
-    padding-left: calc(15 / var(--vw-screen) * 100 * 1vw);
   }
   .projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
-    white-space: normal;
-    font-size: calc(52 / var(--vw-screen) * 100 * 1vw);
+    font-size: calc(56 / var(--vw-screen) * 100 * 1vw);
+    line-height: 1.12;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+  }
+  .projects-section_projectButton__ET6Jm:not(.projects-section_activeBtn__fTE3m) {
+    opacity: 0.45;
+  }
+  .projects-section_projectButton__ET6Jm.projects-section_activeBtn__fTE3m {
+    opacity: 1;
+    color: var(--text-primary);
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects-section_projectButton__ET6Jm.styled-button_variant-project__d69KU {
+    font-size: calc(34 / var(--vw-screen) * 100 * 1vw);
   }
 }
 
@@ -313,6 +374,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .home-page_projectsWindow__efvqh {
-    height: 360svh;
+    height: 400svh;
   }
 }
