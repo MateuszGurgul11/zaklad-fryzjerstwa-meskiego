@@ -68,9 +68,9 @@ GODZINY = [
 ]
 
 ZESPOL = [
-    ("Paula", "Bejbik", "assets/booksy/staff/paula.jpeg"),
-    ("Zosia", None, "assets/booksy/staff/zosia.jpeg"),
-    ("Łukasz", "Łuki Zyss Zysnarski", "assets/booksy/staff/luki.jpeg"),
+    ("Paula", "Bejbik", "assets/booksy/staff/paula.jpeg", "assets/video/zaklad-01.mp4"),
+    ("Zosia", None, "assets/booksy/staff/zosia.jpeg", "assets/video/zaklad-01.mp4"),
+    ("Łukasz", "Łuki Zyss Zysnarski", "assets/booksy/staff/luki.jpeg", "assets/video/zaklad-02.mp4"),
 ]
 
 CENNIK = [

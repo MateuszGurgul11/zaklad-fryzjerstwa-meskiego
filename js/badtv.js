@@ -274,11 +274,11 @@
       }
     };
 
-    // odblokowanie autoodtwarzania po pierwszej interakcji (polityka przeglądarek);
-    // dotyczy wyłącznie filmów — aktywnym źródłem bywa też zwykłe zdjęcie
+    // odblokowanie autoodtwarzania po pierwszej interakcji — tylko filmy bad-TV,
+    // nie karty zespołu ani inne <video> na stronie
     var unlock = function () {
-      document.querySelectorAll('video').forEach(function (v) {
-        if (v.paused && v.muted) v.play().catch(function () {});
+      media.forEach(function (v) {
+        if (v.tagName === 'VIDEO' && v.paused && v.muted) v.play().catch(function () {});
       });
       if (active && active.tagName === 'VIDEO') active.play().catch(function () {});
     };

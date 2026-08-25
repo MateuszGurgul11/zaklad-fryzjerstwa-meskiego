@@ -793,6 +793,29 @@
   }
 
   /* ------------------------------------------------------------------ *
+   *  ZESPÓŁ — film po najechaniu
+   * ------------------------------------------------------------------ */
+  function initTeamVideos() {
+    if (!window.matchMedia('(hover: hover)').matches) return;
+    $$('.team__card').forEach(function (card) {
+      var video = $('.team__video', card);
+      if (!video) return;
+      video.addEventListener('playing', function () {
+        video.setAttribute('data-playing', '');
+      });
+      card.addEventListener('mouseenter', function () {
+        video.muted = true;
+        try { video.currentTime = 0; } catch (e) {}
+        video.play().catch(function () {});
+      });
+      card.addEventListener('mouseleave', function () {
+        video.pause();
+        video.removeAttribute('data-playing');
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------ *
    *  START
    * ------------------------------------------------------------------ */
   function boot() {
@@ -811,6 +834,7 @@
       var services = initServices();
       initAbout();
       initReveals();
+      initTeamVideos();
       initCounters();
       initContact();
       initOpenNow();

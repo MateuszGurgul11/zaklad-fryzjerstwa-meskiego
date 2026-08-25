@@ -50,10 +50,14 @@ def pricing_html(kategorie=None):
 
 def team_html():
     out = ['      <div class="team">']
-    for imie, nick, foto in ZESPOL:
+    for imie, nick, foto, wideo in ZESPOL:
         out.append('        <article class="team__card" data-reveal>')
-        out.append('          <div class="team__photo"><img src="%s" alt="%s — barber" loading="lazy"/></div>'
-                   % (foto, esc(imie)))
+        out.append('          <div class="team__photo">')
+        out.append('            <img src="%s" alt="%s — barber" loading="lazy"/>' % (foto, esc(imie)))
+        if wideo:
+            out.append('            <video class="team__video" src="%s"' % wideo)
+            out.append('                   muted loop playsinline preload="metadata" aria-hidden="true"></video>')
+        out.append('          </div>')
         out.append('          <h3 class="team__name">%s</h3>' % esc(imie))
         if nick:
             out.append('          <p class="team__nick">%s</p>' % esc(nick))

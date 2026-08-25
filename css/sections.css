@@ -205,7 +205,21 @@
   transition: transform .6s var(--ease-out-quart), filter .6s var(--ease-out-quart);
   filter: grayscale(1) contrast(1.05);
 }
+.team__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s var(--ease-out-quart);
+}
 .team__card:hover .team__photo img { transform: scale(1.04); filter: grayscale(0); }
+.team__video[data-playing] { opacity: 1; }
+@media (hover: none) {
+  .team__video { display: none; }
+}
 
 .team__name {
   margin-top: calc(18 / var(--vw-screen) * 100 * 1vw);

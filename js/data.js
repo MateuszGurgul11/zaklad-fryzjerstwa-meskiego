@@ -60,9 +60,9 @@ window.DATA = {
   ],
 
   zespol: [
-    { imie: 'Paula',  pseudonim: 'Bejbik', foto: 'assets/booksy/staff/paula.jpeg' },
-    { imie: 'Zosia',  pseudonim: null,     foto: 'assets/booksy/staff/zosia.jpeg' },
-    { imie: 'Łukasz', pseudonim: 'Łuki Zyss Zysnarski', foto: 'assets/booksy/staff/luki.jpeg' }
+    { imie: 'Paula',  pseudonim: 'Bejbik', foto: 'assets/booksy/staff/paula.jpeg', wideo: 'assets/video/zaklad-01.mp4' },
+    { imie: 'Zosia',  pseudonim: null,     foto: 'assets/booksy/staff/zosia.jpeg', wideo: 'assets/video/zaklad-01.mp4' },
+    { imie: 'Łukasz', pseudonim: 'Łuki Zyss Zysnarski', foto: 'assets/booksy/staff/luki.jpeg', wideo: 'assets/video/zaklad-02.mp4' }
   ],
 
   /* Cennik dokładnie jak na Booksy. „ŁUKASZ" to osobna, wyższa taryfa
@@ -130,16 +130,11 @@ window.DATA = {
   /* Najpopularniejsze — wyróżnione na Booksy, pokazywane na stronie głównej */
   popularne: ['Strzyżenie męskie — fade', 'Combo krótkie włosy', 'Tylko boki'],
 
-  /* Placeholdery Pexels tylko dla pinu hero (okno usług / Bad TV).
+  /* Filmy zakładu w pinie hero (okno usług / Bad TV).
      Galeria na podstronie zostaje na zdjęciach z Booksy. */
   heroTlo: [
-    { src: 'assets/pexels/hero-01.jpg', alt: 'Barber modeluje włosy klienta' },
-    { src: 'assets/pexels/hero-02.jpg', alt: 'Strzyżenie w barbershopie' },
-    { src: 'assets/pexels/hero-03.jpg', alt: 'Strzyżenie maszynką' },
-    { src: 'assets/pexels/hero-04.jpg', alt: 'Przycinanie brody nożyczkami' },
-    { src: 'assets/pexels/hero-05.jpg', alt: 'Strzyżenie brody w salonie' },
-    { src: 'assets/pexels/hero-06.jpg', alt: 'Narzędzia barbera' },
-    { src: 'assets/pexels/hero-07.jpg', alt: 'Trymer przy strzyżeniu męskim' }
+    { src: 'assets/video/zaklad-01.mp4', alt: 'Strzyżenie w zakładzie' },
+    { src: 'assets/video/zaklad-02.mp4', alt: 'Praca barbera' }
   ],
 
   galeria: [
