@@ -194,6 +194,22 @@ Męskiego</h1></div>
         </section>
 """ % team_html()
 
+    instagram = """        <section class="section" id="instagram">
+          <div class="section__head">
+            <div>
+              <span class="eyebrow">Instagram</span>
+              <h2 class="section__title" data-gooey-scroll><span>Z zakładu</span></h2>
+            </div>
+            <p class="section__lead">Świeże cięcia i klimat Wildy —
+            <a href="%s" target="_blank" rel="noopener">@zaklad_fryzjerstwa_meskiego</a>.</p>
+          </div>
+          <div class="ig-feed social-feed">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-db6c545e-c07d-476b-a25a-7d7bcb12d304" data-elfsight-app-lazy></div>
+          </div>
+        </section>
+""" % LINKI["instagram"]
+
     opinie = """        <section class="section section--black" id="opinie">
           <div class="section__head">
             <div>
@@ -211,7 +227,7 @@ Męskiego</h1></div>
 """ % (OPINIE_META["liczba"], reviews_html())
 
     body = ('        <div class="home-page_root__Btl_R" id="top">\n' +
-            hero + uslugi + about + zespol + opinie +
+            hero + uslugi + about + zespol + instagram + opinie +
             '        </div>\n')
 
     return shell(FIRMA["nazwa"] + " — barbershop Wilda, Poznań",

@@ -16,3 +16,8 @@ _tools/__pycache__/
 _Szablon/
 .claude/
 .cursor/
+# sekrety lokalne / Vercel
+.env
+.env.local
+.vercel
+.env*
