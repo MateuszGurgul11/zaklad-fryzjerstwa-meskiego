@@ -302,18 +302,22 @@ def page_galeria():
     body = """        <section class="page">
           <span class="eyebrow">Galeria</span>
           <h1 class="page__title">Nasze<br/>realizacje</h1>
-          <p class="page__lead">Efekty pracy i wnętrze zakładu. Więcej codziennie
-          na <a href="%s" target="_blank" rel="noopener">Instagramie</a>.</p>
+          <p class="page__lead">Świeże cięcia i klimat Wildy —
+          <a href="%s" target="_blank" rel="noopener">@zaklad_fryzjerstwa_meskiego</a>.</p>
         </section>
 
-        <section class="section">
-%s
+        <section class="section" id="instagram">
+          <div class="ig-feed social-feed">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-db6c545e-c07d-476b-a25a-7d7bcb12d304" data-elfsight-app-lazy></div>
+          </div>
         </section>
 %s
-""" % (LINKI["instagram"], gallery_html(), cta("Chcesz tak samo?"))
+""" % (LINKI["instagram"], cta("Chcesz tak samo?"))
     return shell("Galeria — " + FIRMA["nazwa"],
-                 "Zdjęcia strzyżeń, fade i brody oraz wnętrze barbershopu "
-                 "na Wildzie w Poznaniu.", "galeria.html", body)
+                 "Galeria z Instagrama — strzyżenia, fade i broda "
+                 "z Zakładu Fryzjerstwa Męskiego na Wildzie w Poznaniu.",
+                 "galeria.html", body)
 
 
 def page_kontakt():

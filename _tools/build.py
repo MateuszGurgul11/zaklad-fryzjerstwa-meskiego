@@ -411,6 +411,7 @@ SCRIPTS = """
 <script src="js/badtv.js"></script>
 <script src="js/split-text.js"></script>
 <script src="js/app.js"></script>
+<script src="js/elfsight-cleanup.js"></script>
 </body>
 </html>
 """
