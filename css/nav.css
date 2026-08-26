@@ -53,9 +53,15 @@
 }
 .nav__mark {
   display: block;
-  width: calc(26 / var(--vw-screen) * 100 * 1vw);
-  height: calc(28 / var(--vw-screen) * 100 * 1vw);
+  width: calc(40 / var(--vw-screen) * 100 * 1vw);
+  height: calc(29 / var(--vw-screen) * 100 * 1vw);
   flex: none;
+}
+.nav__mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .nav__mark svg { width: 100%; height: 100%; fill: currentColor; }
 .nav__brand:hover { color: var(--brand-green-300); }

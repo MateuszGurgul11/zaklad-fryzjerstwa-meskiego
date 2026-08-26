@@ -254,7 +254,7 @@ def header(active=None):
     """
     out = ['  <header id="header" class="nav" data-nav style="opacity:0">',
            '    <a class="nav__brand" href="index.html">',
-           '      <span class="nav__mark" data-logo></span>',
+           '      <span class="nav__mark" data-logo><img src="assets/brand/logo-mark.png" alt="" width="40" height="29" decoding="async"/></span>',
            '      <span class="nav__brandText">zakład fryzjerstwa męskiego</span>',
            '    </a>',
            '',

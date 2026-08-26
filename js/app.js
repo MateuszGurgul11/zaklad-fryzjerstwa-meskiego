@@ -245,10 +245,8 @@
     var logoWrapper = $('[data-logo]');
     var links = $$('.nav__link', header);
 
-    if (logoWrapper) {
-      fetch('svg/header-logo.svg').then(function (r) { return r.text(); }).then(function (svg) {
-        logoWrapper.innerHTML = svg;
-      }).catch(function () {});
+    if (logoWrapper && !logoWrapper.querySelector('img')) {
+      logoWrapper.innerHTML = '<img src="assets/brand/logo-mark.png" alt="" width="40" height="29" decoding="async"/>';
     }
 
     /* każdy odnośnik ma własną nakładkę z pismem odręcznym */

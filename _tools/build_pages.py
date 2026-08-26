@@ -130,15 +130,20 @@ def page_index():
     hero = """        <div class="home-page_heroWrapper__0Eh8U">
           <section class="hero-section_root__ZsTA_ home-page_hero__pSBct">
             <div class="hero-section_greating__1OyC1">
-              <h1 class="hero-section_mark">
-                <img src="Logo.png"
-                     alt="Zakład Fryzjerstwa Męskiego"
-                     class="hero-section_mark__img"
-                     width="491"
-                     height="360"/>
-              </h1>
+              <div data-gooey><h1 class="hero-section_title__DTVen">Zakład
+Fryzjerstwa
+Męskiego</h1></div>
+              <div class="handwrite-overlay_root__oa9z7 hero-section_handwrite__h878T"
+                   style="color:%(a)s" data-handwrite="Wilda" data-color="%(a)s">
+                <span class="handwrite-overlay_hiddenText__vgaeM">Wilda</span>
+              </div>
             </div>
             <div class="hero-section_about__OlYeE">
+              <div class="hero-section_gifWrapper__1Fy_P">
+                <img src="assets/booksy/logo/logo.jpeg" alt="Logo zakładu"
+                     class="hero-section_headGif__mEIXP"
+                     style="opacity:0;filter:blur(0.3em);border-radius:50%%;object-fit:cover"/>
+              </div>
               <div class="line-by-line-animation_root__Mnh69 hero-section_text__GA552 hero-section_hiddenText__LBjYV">
                 <p data-split>%(opis)s <strong><a href="%(booksy)s" target="_blank" rel="noopener">Zapisy przez Booksy</a></strong>.</p>
               </div>
@@ -149,7 +154,7 @@ def page_index():
             </div>
           </section>
         </div>
-""" % {"opis": esc(FIRMA["opis"]), "booksy": LINKI["booksy"], "icon": MOUSE_ICON}
+""" % {"a": AKCENT, "opis": esc(FIRMA["opis"]), "booksy": LINKI["booksy"], "icon": MOUSE_ICON}
 
     uslugi = """        <div class="window-section-wrapper_root__m5TTH home-page_projectsWindow__efvqh"
              data-window="services" data-window-section-wrapper="services" id="uslugi">

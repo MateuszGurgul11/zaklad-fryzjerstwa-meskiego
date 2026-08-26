@@ -207,8 +207,8 @@ body {
 }
 .hero-section_mark__img {
   display: block;
-  width: min(78vw, 70svh);
-  max-height: 52svh;
+  width: min(72vw, 92svh);
+  max-height: 72svh;
   height: auto;
   object-fit: contain;
   opacity: 0;
@@ -226,14 +226,14 @@ body {
     align-items: flex-start;
   }
   .hero-section_mark__img {
-    width: min(88vw, 48svh);
-    max-height: 36svh;
+    width: min(78vw, 42svh);
+    max-height: 42svh;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-section_mark__img {
-    width: min(90vw, 34svh);
-    max-height: 28svh;
+    width: min(76vw, 24svh);
+    max-height: 24svh;
   }
   .hero-section_about__OlYeE {
     width: min(92vw, 100%);
@@ -270,8 +270,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   .hero-section_mark__img {
-    width: min(92vw, 30svh);
-    max-height: 24svh;
+    width: min(80vw, 21svh);
+    max-height: 21svh;
   }
   .hero-section_about__OlYeE {
     margin-bottom: min(calc(88 / var(--v-min-h) * 100 * 1svh), calc(88 / var(--vw-screen) * 100 * 1vw));
